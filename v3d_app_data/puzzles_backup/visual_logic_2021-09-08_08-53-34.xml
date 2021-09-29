@@ -1,0 +1,1992 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="false" scrollx="1162.0865659202457" scrolly="505.7823960814552" scale="0.8227024747918816">
+    <block xmlns="https://developers.google.com/blockly/xml" type="initSettings" id="gpcA^DEOf2!nKXG-)Tzg" x="-1230" y="-610">
+      <field name="LOAD_COMP_ASSETS">FALSE</field>
+      <field name="FULLSCREEN">TRUE</field>
+      <field name="BKG_TRANSPARENCY">TRUE</field>
+      <field name="PRESERVE_DRAW_BUF">TRUE</field>
+      <field name="FADE_ANNOTATIONS">TRUE</field>
+    </block>
+  </tab>
+  <tab name="main" type="MainTab" active="true" scrollx="-591.1739157224611" scrolly="2633.670814223591" scale="0.7219857701073253">
+    <variables xmlns="https://developers.google.com/blockly/xml">
+      <variable id="Y.F3H1FKKO,v@beN}U95" type="">divan_categ</variable>
+      <variable id="D]o^NL]j}=,7#UP=)fTa" type="">model_code</variable>
+      <variable id="^e3c1J{Q9hr?-p1[$*l`" type="">csv_cloth_price</variable>
+      <variable id=";b2j+tDOFlFM*Fg9u=@N" type="">dict_kat</variable>
+      <variable id="?rdEqG_!+JjSKO#36H/A" type="">textura_img_ind</variable>
+      <variable id="-hxV@8)1^=`Mop;Q:I#D" type="">textura_img</variable>
+      <variable id="t#)C!g8H20Xa%hrZ6E.J" type="">raw</variable>
+      <variable id="-wQv=LET%PJR]xb7OJ#c" type="">saved_conf_url</variable>
+      <variable id=")Eu.^rO%.}2{69.5%ouY" type="">csv_model_price</variable>
+    </variables>
+    <block xmlns="https://developers.google.com/blockly/xml" type="loadFile" id="u2WgI;*YpRvDn+xdyOIw" x="850" y="-3670">
+      <value name="URL">
+        <shadow type="text" id="tgZandt5Az9=I^8l,ze/">
+          <field name="TEXT">./load/img_cloth.csv</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="variables_set" id="!l!W@[NdkYQVDV1t-@)K">
+          <field name="VAR" id="^e3c1J{Q9hr?-p1[$*l`">csv_cloth_price</field>
+          <value name="VALUE">
+            <block type="readCSV" id="bPu![{L#m,hP0P$ae]ly">
+              <field name="DELIMIT">,</field>
+              <value name="TEXT">
+                <block type="loadedFile" id="6dSeguQ!$L!^q;ln-W{-"/>
+              </value>
+              <value name="FROM">
+                <shadow type="math_number" id="F~SmRzBfIND(^NmC/mtY">
+                  <field name="NUM">1</field>
+                </shadow>
+              </value>
+            </block>
+          </value>
+        </block>
+      </statement>
+      <next>
+        <block type="variables_set" id="G~~8ybGPR~+_{IGP3mt2">
+          <field name="VAR" id=";b2j+tDOFlFM*Fg9u=@N">dict_kat</field>
+          <value name="VALUE">
+            <block type="dictCreateEmpty" id="g5fXObl^g*,TP#|piWX{"/>
+          </value>
+          <next>
+            <block type="dictSet" id="8/(g)KRfK7v|u}]7sqan">
+              <value name="DICT">
+                <block type="variables_get" id="8h}VxpOCp,%5bAO0Pcm7">
+                  <field name="VAR" id=";b2j+tDOFlFM*Fg9u=@N">dict_kat</field>
+                </block>
+              </value>
+              <value name="KEY">
+                <shadow type="text" id="=Pyc/=[(YdC=-*$`3DH0">
+                  <field name="TEXT">osn_kat</field>
+                </shadow>
+              </value>
+              <value name="VALUE">
+                <block type="math_number" id="1jExy`vPcJn4y_nJf(FB">
+                  <field name="NUM">0</field>
+                </block>
+              </value>
+              <next>
+                <block type="dictSet" id="WK;%gJu#(0XF@JKpSoU]">
+                  <value name="DICT">
+                    <block type="variables_get" id="{F;Ga#]z})64JDrBv|M!">
+                      <field name="VAR" id=";b2j+tDOFlFM*Fg9u=@N">dict_kat</field>
+                    </block>
+                  </value>
+                  <value name="KEY">
+                    <shadow type="text" id="j1_db.SvEL0oTLlC[jWf">
+                      <field name="TEXT">karkas_kat</field>
+                    </shadow>
+                  </value>
+                  <value name="VALUE">
+                    <block type="math_number" id="q?5z4BAN?XZ!3y;^-GIY">
+                      <field name="NUM">0</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="dictSet" id="4lpM{edw]aI=ARfSM3X)">
+                      <value name="DICT">
+                        <block type="variables_get" id="XW`32cT0rzH}DQ2FR{G=">
+                          <field name="VAR" id=";b2j+tDOFlFM*Fg9u=@N">dict_kat</field>
+                        </block>
+                      </value>
+                      <value name="KEY">
+                        <shadow type="text" id="CRg8j5.Jm?1~bE:TunFL">
+                          <field name="TEXT">poduski_kat</field>
+                        </shadow>
+                      </value>
+                      <value name="VALUE">
+                        <block type="math_number" id="c~ECfeF7_c~,_(1Q[rlG">
+                          <field name="NUM">0</field>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="whenClicked" id="]HE+bN)dgRjj_)Q/S56l">
+                          <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+                          <field name="X_RAY">FALSE</field>
+                          <field name="DOUBLE_CLICK">FALSE</field>
+                          <field name="LEFT_BUTTON">TRUE</field>
+                          <field name="MIDDLE_BUTTON">TRUE</field>
+                          <field name="RIGHT_BUTTON">TRUE</field>
+                          <value name="VALUE">
+                            <shadow type="objectList" id="wJPI+4S!%lXC$1~SUae*">
+                              <field name="FIELDNAME">osnova</field>
+                            </shadow>
+                          </value>
+                          <statement name="DO">
+                            <block type="controls_forEach" id="m4mG|fQV`K{=+Ia~E(8(">
+                              <field name="VAR" id="t#)C!g8H20Xa%hrZ6E.J">raw</field>
+                              <value name="LIST">
+                                <block type="variables_get" id="h3H7RZ:^]g`6o}#uQjP]">
+                                  <field name="VAR" id="^e3c1J{Q9hr?-p1[$*l`">csv_cloth_price</field>
+                                </block>
+                              </value>
+                              <statement name="DO">
+                                <block type="controls_if" id="Y@%~RY*5A_M[)QZGV.[G">
+                                  <value name="IF0">
+                                    <block type="logic_compare" id="IHq=.q^TzM0tguCEyA`:">
+                                      <field name="OP">EQ</field>
+                                      <value name="A">
+                                        <block type="lists_getIndex" id="a=:zS.cp=?I_)He8x+$u">
+                                          <mutation statement="false" at="true"/>
+                                          <field name="MODE">GET</field>
+                                          <field name="WHERE">FROM_START</field>
+                                          <value name="VALUE">
+                                            <block type="variables_get" id="?9LQR4wLU5z6-Sg^d@EO">
+                                              <field name="VAR" id="t#)C!g8H20Xa%hrZ6E.J">raw</field>
+                                            </block>
+                                          </value>
+                                          <value name="AT">
+                                            <block type="math_number" id="n!lWonC9[}+*X]#9g,LH">
+                                              <field name="NUM">0</field>
+                                            </block>
+                                          </value>
+                                        </block>
+                                      </value>
+                                      <value name="B">
+                                        <block type="getHTMLElemAttribute" id="9)1AEz89ENzp4k*|Ti*b">
+                                          <field name="ATTRIBUTE">alt</field>
+                                          <field name="PARENT">TRUE</field>
+                                          <value name="ID">
+                                            <shadow type="text" id="}#5=*(1x?HZusi{M%m!#">
+                                              <field name="TEXT">m_odnotonra</field>
+                                            </shadow>
+                                          </value>
+                                        </block>
+                                      </value>
+                                    </block>
+                                  </value>
+                                  <statement name="DO0">
+                                    <block type="dictSet" id=".$4]SFB0VNpZ8H(N/cd`">
+                                      <value name="DICT">
+                                        <block type="variables_get" id="`1JKis1pA,7Ej$T/HcE]">
+                                          <field name="VAR" id=";b2j+tDOFlFM*Fg9u=@N">dict_kat</field>
+                                        </block>
+                                      </value>
+                                      <value name="KEY">
+                                        <shadow type="text" id="~hZ(dR-rndmXXjKS0@}M">
+                                          <field name="TEXT">osn_kat</field>
+                                        </shadow>
+                                      </value>
+                                      <value name="VALUE">
+                                        <block type="lists_getIndex" id="jzfZT#6/Ne$?3D%fQC%6">
+                                          <mutation statement="false" at="true"/>
+                                          <field name="MODE">GET</field>
+                                          <field name="WHERE">FROM_START</field>
+                                          <value name="VALUE">
+                                            <block type="variables_get" id=",{OH,9l+Pa3nnz?n)zu;">
+                                              <field name="VAR" id="t#)C!g8H20Xa%hrZ6E.J">raw</field>
+                                            </block>
+                                          </value>
+                                          <value name="AT">
+                                            <block type="math_number" id="$K`Hq|tpN:.A_EpnF9!5">
+                                              <field name="NUM">4</field>
+                                            </block>
+                                          </value>
+                                        </block>
+                                      </value>
+                                      <next>
+                                        <block type="console.log" id="Iv[R~A|6^]`r_UEIMQ]i">
+                                          <value name="VALUE">
+                                            <shadow type="text" id="5S,@QtrT|]/M$5n#JYw2">
+                                              <field name="TEXT">Hello, Verge!</field>
+                                            </shadow>
+                                            <block type="text_join" id="Jm*0jDz-iP1~()ieis;w">
+                                              <mutation items="4"/>
+                                              <value name="ADD0">
+                                                <block type="text" id=".u]wM$.lyfUGx|t!+7gC">
+                                                  <field name="TEXT">Категория выбранной ткани на </field>
+                                                </block>
+                                              </value>
+                                              <value name="ADD1">
+                                                <block type="objectList" id="Gq0L+6H4oiQ:F84RafF(">
+                                                  <field name="FIELDNAME">osnova</field>
+                                                </block>
+                                              </value>
+                                              <value name="ADD2">
+                                                <block type="text" id="%~mDHU!:`M2{,~(Pj7Pn">
+                                                  <field name="TEXT">: </field>
+                                                </block>
+                                              </value>
+                                              <value name="ADD3">
+                                                <block type="dictGet" id="B|gi#O;WMQprv}XQff2K">
+                                                  <value name="DICT">
+                                                    <block type="variables_get" id="V4Le=W,-tXa;hb@)6$zA">
+                                                      <field name="VAR" id=";b2j+tDOFlFM*Fg9u=@N">dict_kat</field>
+                                                    </block>
+                                                  </value>
+                                                  <value name="KEY">
+                                                    <shadow type="text" id="V$^Dkaq?DMDhe8YuP/2_">
+                                                      <field name="TEXT">osn_kat</field>
+                                                    </shadow>
+                                                  </value>
+                                                </block>
+                                              </value>
+                                            </block>
+                                          </value>
+                                          <next>
+                                            <block type="console.log" id="BCtbR-Jq6RuszfjYL[|+">
+                                              <value name="VALUE">
+                                                <shadow type="text" id="Bl9F=nr)y^j_t(OD?dnP">
+                                                  <field name="TEXT">бля</field>
+                                                </shadow>
+                                                <block type="text_join" id="H`.!W.O7e3cVk1ckyvy^">
+                                                  <mutation items="2"/>
+                                                  <value name="ADD0">
+                                                    <block type="text" id="koED4;.#LF2~y|5r;*?Q">
+                                                      <field name="TEXT">Код (артикул) ткани: </field>
+                                                    </block>
+                                                  </value>
+                                                  <value name="ADD1">
+                                                    <block type="getHTMLElemAttribute" id="hK?$U2gyT??`2I:#ZbBD">
+                                                      <field name="ATTRIBUTE">alt</field>
+                                                      <field name="PARENT">TRUE</field>
+                                                      <value name="ID">
+                                                        <shadow type="text" id="YsaUgBK+3-owOe:#iY]*">
+                                                          <field name="TEXT">m_odnotonra</field>
+                                                        </shadow>
+                                                      </value>
+                                                    </block>
+                                                  </value>
+                                                </block>
+                                              </value>
+                                              <next>
+                                                <block type="variables_set" id="wx7^Jot@w[ZBdHd:21#X">
+                                                  <field name="VAR" id="Y.F3H1FKKO,v@beN}U95">divan_categ</field>
+                                                  <value name="VALUE">
+                                                    <block type="math_on_list" id="{^Ayu}gXX4O:W,voQU%x">
+                                                      <mutation op="MAX"/>
+                                                      <field name="OP">MAX</field>
+                                                      <value name="LIST">
+                                                        <block type="lists_create_with" id="5FQVk,6EC.C:`:x)QLOn">
+                                                          <mutation items="3"/>
+                                                          <value name="ADD0">
+                                                            <block type="dictGet" id="?@aY875hiWorx|J?^z*z">
+                                                              <value name="DICT">
+                                                                <block type="variables_get" id="n3ZmElT4.H7zO8Hpg,O0">
+                                                                  <field name="VAR" id=";b2j+tDOFlFM*Fg9u=@N">dict_kat</field>
+                                                                </block>
+                                                              </value>
+                                                              <value name="KEY">
+                                                                <shadow type="text" id="gi$g)@H]%=|:AeE$OGZu">
+                                                                  <field name="TEXT">osn_kat</field>
+                                                                </shadow>
+                                                              </value>
+                                                            </block>
+                                                          </value>
+                                                          <value name="ADD1">
+                                                            <block type="dictGet" id="er9#dxQ#yS!7nD4Eq0c*">
+                                                              <value name="DICT">
+                                                                <block type="variables_get" id="QKg6@VpcVoCqI@x?hYzz">
+                                                                  <field name="VAR" id=";b2j+tDOFlFM*Fg9u=@N">dict_kat</field>
+                                                                </block>
+                                                              </value>
+                                                              <value name="KEY">
+                                                                <shadow type="text" id="jKZO5F1kMniy%K2_nclm">
+                                                                  <field name="TEXT">karkas_kat</field>
+                                                                </shadow>
+                                                              </value>
+                                                            </block>
+                                                          </value>
+                                                          <value name="ADD2">
+                                                            <block type="dictGet" id="fU+2(I*j8f_yN)lAP{}1">
+                                                              <value name="DICT">
+                                                                <block type="variables_get" id="cg]ZV!+[2R2/pQ@(L=[:">
+                                                                  <field name="VAR" id=";b2j+tDOFlFM*Fg9u=@N">dict_kat</field>
+                                                                </block>
+                                                              </value>
+                                                              <value name="KEY">
+                                                                <shadow type="text" id="adY$X^VSM2klGNv/S-e?">
+                                                                  <field name="TEXT">poduski_kat</field>
+                                                                </shadow>
+                                                              </value>
+                                                            </block>
+                                                          </value>
+                                                        </block>
+                                                      </value>
+                                                    </block>
+                                                  </value>
+                                                  <next>
+                                                    <block type="console.log" id="6L0%zS=aH{UKEHL6Enz?">
+                                                      <value name="VALUE">
+                                                        <shadow type="text" id="8M^c4tm|H}u6{6q$;4,|">
+                                                          <field name="TEXT">Hello, Verge!</field>
+                                                        </shadow>
+                                                        <block type="variables_get" id="OMm=VG/Z%~#AhM];(Cm`">
+                                                          <field name="VAR" id="Y.F3H1FKKO,v@beN}U95">divan_categ</field>
+                                                        </block>
+                                                      </value>
+                                                    </block>
+                                                  </next>
+                                                </block>
+                                              </next>
+                                            </block>
+                                          </next>
+                                        </block>
+                                      </next>
+                                    </block>
+                                  </statement>
+                                </block>
+                              </statement>
+                            </block>
+                          </statement>
+                          <next>
+                            <block type="whenClicked" id="#(4CqA#^mKL5FEB2P4.y">
+                              <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+                              <field name="X_RAY">FALSE</field>
+                              <field name="DOUBLE_CLICK">FALSE</field>
+                              <field name="LEFT_BUTTON">TRUE</field>
+                              <field name="MIDDLE_BUTTON">TRUE</field>
+                              <field name="RIGHT_BUTTON">TRUE</field>
+                              <value name="VALUE">
+                                <shadow type="objectList" id="V+)t(]8$N3h^@@TM_@ib">
+                                  <field name="FIELDNAME">karkas</field>
+                                </shadow>
+                              </value>
+                              <statement name="DO">
+                                <block type="controls_forEach" id="^woqVBDk7Z1d_;U-I,+N">
+                                  <field name="VAR" id="t#)C!g8H20Xa%hrZ6E.J">raw</field>
+                                  <value name="LIST">
+                                    <block type="variables_get" id="qJco?d!(ayYG*26x;Z(g">
+                                      <field name="VAR" id="^e3c1J{Q9hr?-p1[$*l`">csv_cloth_price</field>
+                                    </block>
+                                  </value>
+                                  <statement name="DO">
+                                    <block type="controls_if" id="_@*#;oFK2Wyt|k:A3%ya">
+                                      <value name="IF0">
+                                        <block type="logic_compare" id="~y850_4@mtc#I^3PR2~X">
+                                          <field name="OP">EQ</field>
+                                          <value name="A">
+                                            <block type="lists_getIndex" id="niE?u?#0^~WvB+ya^y1K">
+                                              <mutation statement="false" at="true"/>
+                                              <field name="MODE">GET</field>
+                                              <field name="WHERE">FROM_START</field>
+                                              <value name="VALUE">
+                                                <block type="variables_get" id="R7a+N`,IIp[fD^simqYK">
+                                                  <field name="VAR" id="t#)C!g8H20Xa%hrZ6E.J">raw</field>
+                                                </block>
+                                              </value>
+                                              <value name="AT">
+                                                <block type="math_number" id="{IVHELoq~DR@:VfD(GH2">
+                                                  <field name="NUM">0</field>
+                                                </block>
+                                              </value>
+                                            </block>
+                                          </value>
+                                          <value name="B">
+                                            <block type="getHTMLElemAttribute" id="b*7h]RaP/0Mygh#dD6b1">
+                                              <field name="ATTRIBUTE">alt</field>
+                                              <field name="PARENT">TRUE</field>
+                                              <value name="ID">
+                                                <shadow type="text" id="s:Kh)5MjOuo!~y2ZMtTU">
+                                                  <field name="TEXT">m_odnotonra</field>
+                                                </shadow>
+                                              </value>
+                                            </block>
+                                          </value>
+                                        </block>
+                                      </value>
+                                      <statement name="DO0">
+                                        <block type="dictSet" id="C%fzoSqAerL1bH8v?=]|">
+                                          <value name="DICT">
+                                            <block type="variables_get" id="PD5*6*d}3E_SD_MISFev">
+                                              <field name="VAR" id=";b2j+tDOFlFM*Fg9u=@N">dict_kat</field>
+                                            </block>
+                                          </value>
+                                          <value name="KEY">
+                                            <shadow type="text" id="+=R/2-8GIpm9r-bPxSF1">
+                                              <field name="TEXT">karkas_kat</field>
+                                            </shadow>
+                                          </value>
+                                          <value name="VALUE">
+                                            <block type="lists_getIndex" id="0WXy$6XR)%NXBm5YZW$E">
+                                              <mutation statement="false" at="true"/>
+                                              <field name="MODE">GET</field>
+                                              <field name="WHERE">FROM_START</field>
+                                              <value name="VALUE">
+                                                <block type="variables_get" id="+g};Hi*^d6w(Qh1b,h4`">
+                                                  <field name="VAR" id="t#)C!g8H20Xa%hrZ6E.J">raw</field>
+                                                </block>
+                                              </value>
+                                              <value name="AT">
+                                                <block type="math_number" id="GQLJu3Mt0~;JjZLpCDy]">
+                                                  <field name="NUM">4</field>
+                                                </block>
+                                              </value>
+                                            </block>
+                                          </value>
+                                          <next>
+                                            <block type="console.log" id="{u068](_)f`f4iPucH3H">
+                                              <value name="VALUE">
+                                                <shadow type="text">
+                                                  <field name="TEXT">Hello, Verge!</field>
+                                                </shadow>
+                                                <block type="text_join" id="}2i7o`kjS4Cj;4ajl2cH">
+                                                  <mutation items="4"/>
+                                                  <value name="ADD0">
+                                                    <block type="text" id="?y~a{!SpY39;=G`s}]Z_">
+                                                      <field name="TEXT">Категория выбранной ткани на </field>
+                                                    </block>
+                                                  </value>
+                                                  <value name="ADD1">
+                                                    <block type="objectList" id="2o7`?EiI;:TP)3*kATs7">
+                                                      <field name="FIELDNAME">karkas</field>
+                                                    </block>
+                                                  </value>
+                                                  <value name="ADD2">
+                                                    <block type="text" id="-GJr~?ehCurQpw!?kn,H">
+                                                      <field name="TEXT">: </field>
+                                                    </block>
+                                                  </value>
+                                                  <value name="ADD3">
+                                                    <block type="dictGet" id="|}};|~z%fhwEUgv266@E">
+                                                      <value name="DICT">
+                                                        <block type="variables_get" id="$A2O/n$!Gh)bscx|or:h">
+                                                          <field name="VAR" id=";b2j+tDOFlFM*Fg9u=@N">dict_kat</field>
+                                                        </block>
+                                                      </value>
+                                                      <value name="KEY">
+                                                        <shadow type="text" id="Hdv;MW3AD)cQ0R++;BX8">
+                                                          <field name="TEXT">karkas_kat</field>
+                                                        </shadow>
+                                                      </value>
+                                                    </block>
+                                                  </value>
+                                                </block>
+                                              </value>
+                                              <next>
+                                                <block type="console.log" id="]K@:;I2ovu_~5:rp2#rR">
+                                                  <value name="VALUE">
+                                                    <shadow type="text">
+                                                      <field name="TEXT">бля</field>
+                                                    </shadow>
+                                                    <block type="text_join" id="v3;w$P$53T!AD|c5@{5c">
+                                                      <mutation items="2"/>
+                                                      <value name="ADD0">
+                                                        <block type="text" id=",*2F~oe[Z*fTxS:k.qz4">
+                                                          <field name="TEXT">Код (артикул) ткани: </field>
+                                                        </block>
+                                                      </value>
+                                                      <value name="ADD1">
+                                                        <block type="getHTMLElemAttribute" id="^SqCB(Z-IL6E8S:m4O!`">
+                                                          <field name="ATTRIBUTE">alt</field>
+                                                          <field name="PARENT">TRUE</field>
+                                                          <value name="ID">
+                                                            <shadow type="text" id="3ceGEMe2t,0XEY:=.C2c">
+                                                              <field name="TEXT">m_odnotonra</field>
+                                                            </shadow>
+                                                          </value>
+                                                        </block>
+                                                      </value>
+                                                    </block>
+                                                  </value>
+                                                </block>
+                                              </next>
+                                            </block>
+                                          </next>
+                                        </block>
+                                      </statement>
+                                    </block>
+                                  </statement>
+                                </block>
+                              </statement>
+                              <next>
+                                <block type="whenClicked" id="hCNx{|h_`XrBE~|h1~Zf">
+                                  <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+                                  <field name="X_RAY">FALSE</field>
+                                  <field name="DOUBLE_CLICK">FALSE</field>
+                                  <field name="LEFT_BUTTON">TRUE</field>
+                                  <field name="MIDDLE_BUTTON">TRUE</field>
+                                  <field name="RIGHT_BUTTON">TRUE</field>
+                                  <value name="VALUE">
+                                    <shadow type="objectList" id="~w]gYh)^-4[831dGmJPZ">
+                                      <field name="FIELDNAME">poduski</field>
+                                    </shadow>
+                                  </value>
+                                  <statement name="DO">
+                                    <block type="dictSet" id="V6hsxP=rkOvYQM_P}9i-">
+                                      <value name="DICT">
+                                        <block type="variables_get" id="9f56tA3Q?:=?UehSklr+">
+                                          <field name="VAR" id=";b2j+tDOFlFM*Fg9u=@N">dict_kat</field>
+                                        </block>
+                                      </value>
+                                      <value name="KEY">
+                                        <shadow type="text" id="%_#Dbtv9]I~9?BP.G=Ln">
+                                          <field name="TEXT">poduski_kat</field>
+                                        </shadow>
+                                      </value>
+                                      <value name="VALUE">
+                                        <block type="math_number" id="th+JVez9{{|uQ*:d^YKs">
+                                          <field name="NUM">4</field>
+                                        </block>
+                                      </value>
+                                      <next>
+                                        <block type="controls_forEach" id="~z7cZF4kroEqn$)BJ6*~">
+                                          <field name="VAR" id="t#)C!g8H20Xa%hrZ6E.J">raw</field>
+                                          <value name="LIST">
+                                            <block type="variables_get" id="WbkbG#gy6[5_`-eX+3C]">
+                                              <field name="VAR" id="^e3c1J{Q9hr?-p1[$*l`">csv_cloth_price</field>
+                                            </block>
+                                          </value>
+                                          <statement name="DO">
+                                            <block type="controls_if" id="ckLnNvK5]:f*%hJ8}x;=">
+                                              <value name="IF0">
+                                                <block type="logic_compare" id="6Y_Apb0,#sGCS)mFY3_o">
+                                                  <field name="OP">EQ</field>
+                                                  <value name="A">
+                                                    <block type="lists_getIndex" id="bF~ulZ:=o-t1N`z/%-Sm">
+                                                      <mutation statement="false" at="true"/>
+                                                      <field name="MODE">GET</field>
+                                                      <field name="WHERE">FROM_START</field>
+                                                      <value name="VALUE">
+                                                        <block type="variables_get" id="47V6|%i*CFQ{e*58C#P/">
+                                                          <field name="VAR" id="t#)C!g8H20Xa%hrZ6E.J">raw</field>
+                                                        </block>
+                                                      </value>
+                                                      <value name="AT">
+                                                        <block type="math_number" id="m6A?oME[GJ$=nrL,h[|w">
+                                                          <field name="NUM">0</field>
+                                                        </block>
+                                                      </value>
+                                                    </block>
+                                                  </value>
+                                                  <value name="B">
+                                                    <block type="getHTMLElemAttribute" id="oWI-kXO!;L+!5CLatZd*">
+                                                      <field name="ATTRIBUTE">alt</field>
+                                                      <field name="PARENT">TRUE</field>
+                                                      <value name="ID">
+                                                        <shadow type="text" id="EYb:yn]rEAC*pycQg?K;">
+                                                          <field name="TEXT">m_odnotonra</field>
+                                                        </shadow>
+                                                      </value>
+                                                    </block>
+                                                  </value>
+                                                </block>
+                                              </value>
+                                              <statement name="DO0">
+                                                <block type="dictSet" id="i6WQL,U%yv/`Ec+}+d`Q">
+                                                  <value name="DICT">
+                                                    <block type="variables_get" id="7bz}NK3fvk{:Mv_xoK-(">
+                                                      <field name="VAR" id=";b2j+tDOFlFM*Fg9u=@N">dict_kat</field>
+                                                    </block>
+                                                  </value>
+                                                  <value name="KEY">
+                                                    <shadow type="text" id="[%8:4M`SJ#J7iF?RHHVa">
+                                                      <field name="TEXT">poduski_kat</field>
+                                                    </shadow>
+                                                  </value>
+                                                  <value name="VALUE">
+                                                    <block type="lists_getIndex" id="{Gl7GaiK!;(=.2m654=A">
+                                                      <mutation statement="false" at="true"/>
+                                                      <field name="MODE">GET</field>
+                                                      <field name="WHERE">FROM_START</field>
+                                                      <value name="VALUE">
+                                                        <block type="variables_get" id="BQu{G5.@o3^nPM!_IU9]">
+                                                          <field name="VAR" id="t#)C!g8H20Xa%hrZ6E.J">raw</field>
+                                                        </block>
+                                                      </value>
+                                                      <value name="AT">
+                                                        <block type="math_number" id="*[).Q2*dAWQDdYJj(a9j">
+                                                          <field name="NUM">4</field>
+                                                        </block>
+                                                      </value>
+                                                    </block>
+                                                  </value>
+                                                  <next>
+                                                    <block type="console.log" id="`;.L[~@6F#Tv7-XWOp]T">
+                                                      <value name="VALUE">
+                                                        <shadow type="text">
+                                                          <field name="TEXT">Hello, Verge!</field>
+                                                        </shadow>
+                                                        <block type="text_join" id="YzLU7]q{2NL_6x[N|*GP">
+                                                          <mutation items="4"/>
+                                                          <value name="ADD0">
+                                                            <block type="text" id="k8Pn95ybP)|fB$!xeXQ$">
+                                                              <field name="TEXT">Категория выбранной ткани на </field>
+                                                            </block>
+                                                          </value>
+                                                          <value name="ADD1">
+                                                            <block type="objectList" id="75FJ!$xY.*j;AmhB@/vV">
+                                                              <field name="FIELDNAME">poduski</field>
+                                                            </block>
+                                                          </value>
+                                                          <value name="ADD2">
+                                                            <block type="text" id="Zam}Rf-ju?m|0eb]b/5j">
+                                                              <field name="TEXT">: </field>
+                                                            </block>
+                                                          </value>
+                                                          <value name="ADD3">
+                                                            <block type="dictGet" id="Nix*Oy:v)q+G8Y~IHpuh">
+                                                              <value name="DICT">
+                                                                <block type="variables_get" id="k0@It^](LOpp+3)%v!z+">
+                                                                  <field name="VAR" id=";b2j+tDOFlFM*Fg9u=@N">dict_kat</field>
+                                                                </block>
+                                                              </value>
+                                                              <value name="KEY">
+                                                                <shadow type="text" id="^ZmPy:[G}14i6YdM=#|S">
+                                                                  <field name="TEXT">poduski_kat</field>
+                                                                </shadow>
+                                                              </value>
+                                                            </block>
+                                                          </value>
+                                                        </block>
+                                                      </value>
+                                                      <next>
+                                                        <block type="console.log" id="Bs.aZ{IxLaW]:~aE@`bv">
+                                                          <value name="VALUE">
+                                                            <shadow type="text">
+                                                              <field name="TEXT">бля</field>
+                                                            </shadow>
+                                                            <block type="text_join" id="EucKjKPca#]evE|7Ga(+">
+                                                              <mutation items="2"/>
+                                                              <value name="ADD0">
+                                                                <block type="text" id="OFiso+GkzM.Tcupyt8gC">
+                                                                  <field name="TEXT">Код (артикул) ткани: </field>
+                                                                </block>
+                                                              </value>
+                                                              <value name="ADD1">
+                                                                <block type="getHTMLElemAttribute" id="Ip[RcDA8|%Sy@U@ij-B.">
+                                                                  <field name="ATTRIBUTE">alt</field>
+                                                                  <field name="PARENT">TRUE</field>
+                                                                  <value name="ID">
+                                                                    <shadow type="text" id="i/OitqRy|f(`fqa$AQvX">
+                                                                      <field name="TEXT">m_odnotonra</field>
+                                                                    </shadow>
+                                                                  </value>
+                                                                </block>
+                                                              </value>
+                                                            </block>
+                                                          </value>
+                                                        </block>
+                                                      </next>
+                                                    </block>
+                                                  </next>
+                                                </block>
+                                              </statement>
+                                            </block>
+                                          </statement>
+                                        </block>
+                                      </next>
+                                    </block>
+                                  </statement>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="5ryAblx~i|]4LJ3H_:(a" x="1870" y="-3710">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <shadow type="text">
+          <field name="TEXT"/>
+        </shadow>
+        <block type="text" id="+;jG(S_E25HQ*/nv1DzL">
+          <field name="TEXT">rotation_m</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="variables_set" id="d?fg[PKGoZNf+n7U.jS$">
+          <field name="VAR" id="Y.F3H1FKKO,v@beN}U95">divan_categ</field>
+          <value name="VALUE">
+            <block type="math_on_list" id="K2YrxVcT`|IJF(WFqe6`">
+              <mutation op="MAX"/>
+              <field name="OP">MAX</field>
+              <value name="LIST">
+                <block type="lists_create_with" id="V1w9^!.S42QRbZD^AM6~">
+                  <mutation items="3"/>
+                  <value name="ADD0">
+                    <block type="dictGet" id="(QT_:4fhvDmTmc/-Xp3l">
+                      <value name="DICT">
+                        <block type="variables_get" id="kWKN2YFB3flgG28u@L4~">
+                          <field name="VAR" id=";b2j+tDOFlFM*Fg9u=@N">dict_kat</field>
+                        </block>
+                      </value>
+                      <value name="KEY">
+                        <shadow type="text" id="W,kPPh@FS_*xS:HLTulE">
+                          <field name="TEXT">osn_kat</field>
+                        </shadow>
+                      </value>
+                    </block>
+                  </value>
+                  <value name="ADD1">
+                    <block type="dictGet" id="g!{[ej(~oM/W}F%D8LP#">
+                      <value name="DICT">
+                        <block type="variables_get" id="g{@cL0pP~XG5k}1:VM!q">
+                          <field name="VAR" id=";b2j+tDOFlFM*Fg9u=@N">dict_kat</field>
+                        </block>
+                      </value>
+                      <value name="KEY">
+                        <shadow type="text" id="[_U9op/6_wwc4t/Aie;o">
+                          <field name="TEXT">karkas_kat</field>
+                        </shadow>
+                      </value>
+                    </block>
+                  </value>
+                  <value name="ADD2">
+                    <block type="dictGet" id="Io~.*(0P{Z/2}%J-{i_$">
+                      <value name="DICT">
+                        <block type="variables_get" id="Naq9HhsrNdh2:j@jVyI@">
+                          <field name="VAR" id=";b2j+tDOFlFM*Fg9u=@N">dict_kat</field>
+                        </block>
+                      </value>
+                      <value name="KEY">
+                        <shadow type="text" id="!LqY4g7R0~m3(_UGZYwp">
+                          <field name="TEXT">poduski_kat</field>
+                        </shadow>
+                      </value>
+                    </block>
+                  </value>
+                </block>
+              </value>
+            </block>
+          </value>
+          <next>
+            <block type="console.log" id="404vGFy6SDU?tMg#0pYR" disabled="true">
+              <value name="VALUE">
+                <shadow type="text">
+                  <field name="TEXT">Hello, Verge!</field>
+                </shadow>
+                <block type="text_join" id="}Evf0H[-8M`Fd7FQ;+],">
+                  <mutation items="2"/>
+                  <value name="ADD0">
+                    <block type="text" id="D`Swx~4MBR$j)-pneO5-">
+                      <field name="TEXT">максимум </field>
+                    </block>
+                  </value>
+                  <value name="ADD1">
+                    <block type="lists_create_with" id="*u:$6ZXq)_VY3eyVR_!,">
+                      <mutation items="3"/>
+                      <value name="ADD0">
+                        <block type="dictGet" id="G[TVHBuuo=(ce+d.,lzi">
+                          <value name="DICT">
+                            <block type="variables_get" id="q_^e~:TLOiy]QkNZtZ6$">
+                              <field name="VAR" id=";b2j+tDOFlFM*Fg9u=@N">dict_kat</field>
+                            </block>
+                          </value>
+                          <value name="KEY">
+                            <shadow type="text" id="I)b3+g?nVCT:pnxi{TTC">
+                              <field name="TEXT">osn_kat</field>
+                            </shadow>
+                          </value>
+                        </block>
+                      </value>
+                      <value name="ADD1">
+                        <block type="dictGet" id="F?FL8Z$o?qCg-!j.e1T?">
+                          <value name="DICT">
+                            <block type="variables_get" id=";3$W%J//;N;$hfqZ/j=w">
+                              <field name="VAR" id=";b2j+tDOFlFM*Fg9u=@N">dict_kat</field>
+                            </block>
+                          </value>
+                          <value name="KEY">
+                            <shadow type="text" id="ZCymiG{Pkw29hV8qH_C/">
+                              <field name="TEXT">karkas_kat</field>
+                            </shadow>
+                          </value>
+                        </block>
+                      </value>
+                      <value name="ADD2">
+                        <block type="dictGet" id=",7L)++LGxJ)qD2_]od^5">
+                          <value name="DICT">
+                            <block type="variables_get" id="U/Xy$zqk=mH7{WCA4PPq">
+                              <field name="VAR" id=";b2j+tDOFlFM*Fg9u=@N">dict_kat</field>
+                            </block>
+                          </value>
+                          <value name="KEY">
+                            <shadow type="text" id="7Xb3ET.E~`;T6Qc`rKLb">
+                              <field name="TEXT">poduski_kat</field>
+                            </shadow>
+                          </value>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <next>
+                <block type="console.log" id="A;cAN1hn%3w@JmA5|e)c" disabled="true">
+                  <value name="VALUE">
+                    <shadow type="text" id="X%WY$c/^vwxUVk|u3TN(">
+                      <field name="TEXT">Hello, Verge!</field>
+                    </shadow>
+                    <block type="variables_get" id="=H[y?p*Lk;2w1f{NOm=F">
+                      <field name="VAR" id="Y.F3H1FKKO,v@beN}U95">divan_categ</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="variables_set" id="3ud8L9$2.xvA[(|U]q=$">
+                      <field name="VAR" id="D]o^NL]j}=,7#UP=)fTa">model_code</field>
+                      <value name="VALUE">
+                        <block type="math_number" id="IOnk[t(bI9u{7pBqrok?">
+                          <field name="NUM">95068</field>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="loadFile" id="@R)R[^R|eXxDp~PQlm`S">
+                          <value name="URL">
+                            <shadow type="text" id="!.Udg,p4{U1Tf6FUWCSD">
+                              <field name="TEXT">./load/model.csv</field>
+                            </shadow>
+                          </value>
+                          <statement name="DO">
+                            <block type="variables_set" id="Fg!r3.H6pS)j|7}=UT45">
+                              <field name="VAR" id=")Eu.^rO%.}2{69.5%ouY">csv_model_price</field>
+                              <value name="VALUE">
+                                <block type="readCSV" id="w*J30Ji=%]f2]It7b%i-">
+                                  <field name="DELIMIT">,</field>
+                                  <value name="TEXT">
+                                    <block type="loadedFile" id="F`Y|$q:44UgwgDe*g5BW"/>
+                                  </value>
+                                  <value name="FROM">
+                                    <shadow type="math_number" id="f7eiI.y.clR@+J(lit-V">
+                                      <field name="NUM">1</field>
+                                    </shadow>
+                                  </value>
+                                </block>
+                              </value>
+                              <next>
+                                <block type="console.log" id="3Tc/w|6aB#QBG,A)8A-S">
+                                  <value name="VALUE">
+                                    <shadow type="text" id="k6^io#RjFC8l3!Hg0)NJ">
+                                      <field name="TEXT">Hello, Verge!</field>
+                                    </shadow>
+                                    <block type="variables_get" id="uSBd/fTU5L));Olx.kO.">
+                                      <field name="VAR" id=")Eu.^rO%.}2{69.5%ouY">csv_model_price</field>
+                                    </block>
+                                  </value>
+                                  <next>
+                                    <block type="controls_forEach" id="hgSxXd/_:m#mIz7^9``e">
+                                      <field name="VAR" id="t#)C!g8H20Xa%hrZ6E.J">raw</field>
+                                      <value name="LIST">
+                                        <block type="variables_get" id="JlLiCwJrj!,M]P$9f~`W">
+                                          <field name="VAR" id=")Eu.^rO%.}2{69.5%ouY">csv_model_price</field>
+                                        </block>
+                                      </value>
+                                      <statement name="DO">
+                                        <block type="console.log" id="#dnEsQ]5zj*iDbmD_gf]">
+                                          <value name="VALUE">
+                                            <shadow type="text" id="5%TuoMc#y@6gdXC6I2;@">
+                                              <field name="TEXT">Hello, Verge!</field>
+                                            </shadow>
+                                            <block type="lists_getIndex" id="p,,-eR8r!P+oG(RwM[b/">
+                                              <mutation statement="false" at="true"/>
+                                              <field name="MODE">GET</field>
+                                              <field name="WHERE">FROM_START</field>
+                                              <value name="VALUE">
+                                                <block type="variables_get" id="r~DCkN_FVX:%;F*jmpw(">
+                                                  <field name="VAR" id="t#)C!g8H20Xa%hrZ6E.J">raw</field>
+                                                </block>
+                                              </value>
+                                              <value name="AT">
+                                                <block type="math_number" id="k5MHGZs_U^C;kOw_kPLl">
+                                                  <field name="NUM">0</field>
+                                                </block>
+                                              </value>
+                                            </block>
+                                          </value>
+                                          <next>
+                                            <block type="controls_if" id="FY2n[t.fdd65]8OI8I]a">
+                                              <value name="IF0">
+                                                <block type="logic_compare" id=",}G1U#3Y5}lT89h1k)KB">
+                                                  <field name="OP">EQ</field>
+                                                  <value name="A">
+                                                    <block type="lists_getIndex" id="*;lnmM?dJ3,DsR+rx!#V">
+                                                      <mutation statement="false" at="true"/>
+                                                      <field name="MODE">GET</field>
+                                                      <field name="WHERE">FROM_START</field>
+                                                      <value name="VALUE">
+                                                        <block type="variables_get" id=")c+~c5X;]|s9_1FjhXDP">
+                                                          <field name="VAR" id="t#)C!g8H20Xa%hrZ6E.J">raw</field>
+                                                        </block>
+                                                      </value>
+                                                      <value name="AT">
+                                                        <block type="math_number" id="7mcr-Z^^%K1p%6CIF:Oi">
+                                                          <field name="NUM">1</field>
+                                                        </block>
+                                                      </value>
+                                                    </block>
+                                                  </value>
+                                                  <value name="B">
+                                                    <block type="text" id="!L5gLV]kj)[yvo[hg(:V">
+                                                      <field name="TEXT">2</field>
+                                                    </block>
+                                                  </value>
+                                                </block>
+                                              </value>
+                                              <statement name="DO0">
+                                                <block type="console.log" id="PS2q@6|Bdl^b}!1M[k#n">
+                                                  <value name="VALUE">
+                                                    <shadow type="text" id="^@glVB^wv}9,v=(QF,^t">
+                                                      <field name="TEXT">Hello, Verge!</field>
+                                                    </shadow>
+                                                  </value>
+                                                </block>
+                                              </statement>
+                                            </block>
+                                          </next>
+                                        </block>
+                                      </statement>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </statement>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="text" id="m9}c{Id]euz6xSX*Zh}Q" x="-1330" y="-3510">
+      <field name="TEXT">Hello, Verge!</field>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="initFullscreen" id="7a4%`ScNxhaP$VI7mc=:" x="-1530" y="-3430">
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <block type="text" id="}#s%78r=Qw(n*$q?^~E,">
+          <field name="TEXT">fs_button</field>
+        </block>
+      </value>
+      <statement name="DO_ENTER">
+        <block type="setHTMLElemAttribute" id="t`KDY/HQB-:#^-EOIMiN">
+          <field name="ATTRIBUTE">src</field>
+          <field name="PARENT">TRUE</field>
+          <value name="VALUE">
+            <block type="text" id="`,w605s1~o^|JwKI~bi:">
+              <field name="TEXT">exit.png</field>
+            </block>
+          </value>
+          <value name="ID">
+            <block type="text" id="Lb5r~^zG$QS{K0Qh6A1Z">
+              <field name="TEXT">fs_image</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+      <statement name="DO_EXIT">
+        <block type="setHTMLElemAttribute" id="DKxU8=Gck%6/jh=Mkrm:">
+          <field name="ATTRIBUTE">src</field>
+          <field name="PARENT">TRUE</field>
+          <value name="VALUE">
+            <block type="text" id="5A%hA|XkCA%tY|u~E|;b">
+              <field name="TEXT">enter.png</field>
+            </block>
+          </value>
+          <value name="ID">
+            <block type="text" id="J0S@nHq*Gw85$il1ypR?">
+              <field name="TEXT">fs_image</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+      <statement name="DO_UNAVAIL">
+        <block type="setHTMLElemStyle" id="Vun_G7Wdb(PX`ltKrqyR">
+          <field name="PROPERTY">visibility</field>
+          <field name="PARENT">TRUE</field>
+          <value name="VALUE">
+            <block type="text" id="H[+/4nDlWJ^.p8Pjv025">
+              <field name="TEXT">hidden</field>
+            </block>
+          </value>
+          <value name="ID">
+            <block type="text" id="Z1XVJ;#DwCJN%%lcmL^s">
+              <field name="TEXT">fs_button</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="=8?3J@*SI,2:t+,O0%vt" x="-1530" y="-3190">
+      <field name="EVENT">change</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <shadow type="text" id="(3`-,sS=}(OJZXw)G+S(">
+          <field name="TEXT"/>
+        </shadow>
+        <block type="text" id="Qm;EDqcqr24#bNA7e/}c">
+          <field name="TEXT">r1</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="setMaterialValue" id="4U5l!BjZTAPQql5QzhCr">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" flexvalinput="false"></mutation>
+          <field name="MAT_VAL_NAME">Value</field>
+          <value name="MATERIAL">
+            <shadow type="materialList" id="Y9vd)azNkPmU.PA|5qdw">
+              <field name="FIELDNAME">karkas</field>
+            </shadow>
+          </value>
+          <value name="VALUE">
+            <shadow type="math_number" id="s[a%n:vEF~Fy2OkXF7Hc">
+              <field name="NUM">0.5</field>
+            </shadow>
+            <block type="getHTMLElemAttribute" id="yw6]I)bRB!9*OGcxwi3G">
+              <field name="ATTRIBUTE">value</field>
+              <field name="PARENT">TRUE</field>
+              <value name="ID">
+                <shadow type="text" id="KMrKqFw4_#.QWM-.hHxi">
+                  <field name="TEXT"/>
+                </shadow>
+                <block type="text" id="K8+KHFEnoziBRZ]ru6Lu">
+                  <field name="TEXT">r1</field>
+                </block>
+              </value>
+            </block>
+          </value>
+        </block>
+      </statement>
+      <next>
+        <block type="eventHTMLElem" id="W)H}?=Sx:MBPz|AXpOT9">
+          <field name="EVENT">change</field>
+          <field name="PARENT">TRUE</field>
+          <value name="ID">
+            <shadow type="text" id="J9i|*5hrC_JvLEY+z4un">
+              <field name="TEXT"/>
+            </shadow>
+            <block type="text" id="dSS6Eh61*[cXmk|ief}z">
+              <field name="TEXT">r2</field>
+            </block>
+          </value>
+          <statement name="DO">
+            <block type="setMaterialValue" id="p~D,#`YQ9J#TbeNT_WT5">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" flexvalinput="false"></mutation>
+              <field name="MAT_VAL_NAME">Value</field>
+              <value name="MATERIAL">
+                <shadow type="materialList" id="UpOoAPN_F:W,]?GRkDUW">
+                  <field name="FIELDNAME">osnova_main</field>
+                </shadow>
+              </value>
+              <value name="VALUE">
+                <shadow type="math_number" id="(u-|qg3n~i(@)T8EO?aM">
+                  <field name="NUM">0.5</field>
+                </shadow>
+                <block type="getHTMLElemAttribute" id="JlIAheD-sU`?bscr}JNb">
+                  <field name="ATTRIBUTE">value</field>
+                  <field name="PARENT">TRUE</field>
+                  <value name="ID">
+                    <shadow type="text" id="mTrTT4;Z3+gd/LEe]SN%">
+                      <field name="TEXT"/>
+                    </shadow>
+                    <block type="text" id="V9Fk}JWxx?9uMW{9W#wH">
+                      <field name="TEXT">r2</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+            </block>
+          </statement>
+          <next>
+            <block type="eventHTMLElem" id="Ek1.YvT-kw.^cLo_IPCm">
+              <field name="EVENT">change</field>
+              <field name="PARENT">TRUE</field>
+              <value name="ID">
+                <shadow type="text">
+                  <field name="TEXT"/>
+                </shadow>
+                <block type="text" id="n9PVJQY#%HT17(~!T#(@">
+                  <field name="TEXT">r3</field>
+                </block>
+              </value>
+              <statement name="DO">
+                <block type="setMaterialValue" id="y@H[](kGrsSoVl60;+8U">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" flexvalinput="false"></mutation>
+                  <field name="MAT_VAL_NAME">Value</field>
+                  <value name="MATERIAL">
+                    <shadow type="materialList" id="$Lau3NJTlSzX@%J!]Ci%">
+                      <field name="FIELDNAME">posushki_small</field>
+                    </shadow>
+                  </value>
+                  <value name="VALUE">
+                    <shadow type="math_number">
+                      <field name="NUM">0.5</field>
+                    </shadow>
+                    <block type="getHTMLElemAttribute" id="0rOvWSY8Npw5dHTm%oTJ">
+                      <field name="ATTRIBUTE">value</field>
+                      <field name="PARENT">TRUE</field>
+                      <value name="ID">
+                        <shadow type="text">
+                          <field name="TEXT"/>
+                        </shadow>
+                        <block type="text" id="6c+XwaQ{A{D(BY/]MUwW">
+                          <field name="TEXT">r3</field>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                </block>
+              </statement>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="printPerformanceInfo" id="pQ%%A~Cj2^wIENUscOCX" disabled="true" x="-2070" y="-2950"/>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_get" id="yTS]m;%3loO5#$7~[P7R" x="2710" y="-3090">
+      <field name="VAR" id="Y.F3H1FKKO,v@beN}U95">divan_categ</field>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="C`:*1l:tO:8Jug]Rt_8_" x="-1530" y="-2850">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <shadow type="text">
+          <field name="TEXT"/>
+        </shadow>
+        <block type="text" id="o+80yrjonzx^MqE4WJ%w">
+          <field name="TEXT">screen_m</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="downloadFile" id="iU;xvh9dO~Yp:ymF0E|Q">
+          <value name="CONTENTS">
+            <shadow type="text" id="+gb~QT+5ZtnAv|%?k}rY">
+              <field name="TEXT">data:,</field>
+            </shadow>
+            <block type="takeScreenshot" id="dQDxYtfHz]XiJ17ZKWoY">
+              <field name="TYPE">jpeg</field>
+            </block>
+          </value>
+          <value name="FILENAME">
+            <shadow type="text" id="+CG#7g/pW^zq*7/xXVN-">
+              <field name="TEXT">screen.jpg</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+      <next>
+        <block type="eventHTMLElem" id="^bwV^4i$+oHO4}Cv6cQs">
+          <field name="EVENT">click</field>
+          <field name="PARENT">TRUE</field>
+          <value name="ID">
+            <shadow type="text" id="sDdnj6,OdV_;g4([``L)">
+              <field name="TEXT"/>
+            </shadow>
+            <block type="text" id="5pN6d^XqfAwG5(4vn)~#">
+              <field name="TEXT">environment_m</field>
+            </block>
+          </value>
+          <statement name="DO">
+            <block type="hide" id="xVL3+2!x1!N@[yW}B3:l">
+              <value name="VALUE">
+                <shadow type="objectList" id="ZJ}EwrW$NJrDG[%mJMbr">
+                  <field name="FIELDNAME">&lt;none&gt;</field>
+                </shadow>
+                <block type="objectList" id="Cn[U,/kbDN%A[iNZI7}V">
+                  <field name="FIELDNAME">flo</field>
+                </block>
+              </value>
+              <next>
+                <block type="hide" id=".bnXV(bZP;0NbyEg`U#7">
+                  <value name="VALUE">
+                    <shadow type="objectList">
+                      <field name="FIELDNAME">&lt;none&gt;</field>
+                    </shadow>
+                    <block type="objectList" id="Pe1vFx+v0WGy%%epyn,9">
+                      <field name="FIELDNAME">Plane</field>
+                    </block>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </statement>
+          <next>
+            <block type="eventHTMLElem" id="ty2hl3i9^z3!ZqAhQ6[9">
+              <field name="EVENT">dblclick</field>
+              <field name="PARENT">TRUE</field>
+              <value name="ID">
+                <shadow type="text">
+                  <field name="TEXT"/>
+                </shadow>
+                <block type="text" id="*K9)6yxVEBJy!/~bHA24">
+                  <field name="TEXT">environment_m</field>
+                </block>
+              </value>
+              <statement name="DO">
+                <block type="show" id="vB;6{=ODp_yv.k0rtpu;">
+                  <value name="VALUE">
+                    <shadow type="objectList" id="i_9_VIA4T=8yK/OycnlV">
+                      <field name="FIELDNAME">&lt;none&gt;</field>
+                    </shadow>
+                    <block type="objectList" id="mWTUsKF}BCpPbISk@Z.@">
+                      <field name="FIELDNAME">flo</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="show" id="elXPDxk0f[e]P6lmY,{,">
+                      <value name="VALUE">
+                        <shadow type="objectList">
+                          <field name="FIELDNAME">&lt;none&gt;</field>
+                        </shadow>
+                        <block type="objectList" id="HY?e_jUqKl.,)$NRtF)(">
+                          <field name="FIELDNAME">Plane</field>
+                        </block>
+                      </value>
+                    </block>
+                  </next>
+                </block>
+              </statement>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="text" id="N)JZvMNN3:lKL2bZfe)c" x="2247" y="-3030">
+      <field name="TEXT">95068</field>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_get" id="R}arj~[dqN)50FV/nDGU" x="2654" y="-3025">
+      <field name="VAR" id="D]o^NL]j}=,7#UP=)fTa">model_code</field>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_get" id="Wgy]cdUC]MP5nXc}(i-9" x="2430" y="-3010">
+      <field name="VAR" id="Y.F3H1FKKO,v@beN}U95">divan_categ</field>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="dictSet" id="}Iisj_,(z@K+Ky++4RxP" disabled="true" x="2170" y="-2870">
+      <value name="DICT">
+        <block type="variables_get" id="z^,Zoug0V/J?t?$;^?)b">
+          <field name="VAR" id="Y.F3H1FKKO,v@beN}U95">divan_categ</field>
+        </block>
+      </value>
+      <value name="KEY">
+        <shadow type="text" id="roRw.-oao+k}ea@irGMn">
+          <field name="TEXT">divan_kat</field>
+        </shadow>
+      </value>
+      <value name="VALUE">
+        <block type="lists_getIndex" id="O3-PIiv*nBnm_wVEUn^k">
+          <mutation statement="false" at="true"/>
+          <field name="MODE">GET</field>
+          <field name="WHERE">FROM_START</field>
+          <value name="VALUE">
+            <block type="variables_get" id="^Agvq*{j!wHe_-3D){=)">
+              <field name="VAR" id="t#)C!g8H20Xa%hrZ6E.J">raw</field>
+            </block>
+          </value>
+          <value name="AT">
+            <block type="math_number" id="[bZ;G97bT!w#Tv`~pJ$j">
+              <field name="NUM">4</field>
+            </block>
+          </value>
+        </block>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="#U{w.ca1rjd|{]O=i{nw" x="-1970" y="-2410">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <shadow type="text" id="B_H{A,@WGItb:A7~96M%">
+          <field name="TEXT">r1_1</field>
+        </shadow>
+        <block type="text" id="5{*WppP$Kj`*mQh[!)C+">
+          <field name="TEXT">m_odnoton_ind</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="openFile" id="K)wE|!?{^Wv[|%d;ja4O">
+          <statement name="DO">
+            <block type="variables_set" id="72cCZ~I:?d)|wE6wh~oG">
+              <field name="VAR" id="?rdEqG_!+JjSKO#36H/A">textura_img_ind</field>
+              <value name="VALUE">
+                <block type="openedFile" id="c)(8s3Ykf[$M^R3Y{V`1"/>
+              </value>
+              <next>
+                <block type="sendData" id="69gHy~^Uf_gLJR(G{ys," disabled="true">
+                  <value name="DATA">
+                    <block type="openedFile" id="3Uo3-`,kCzi}+MW%FLZ["/>
+                  </value>
+                  <value name="URL">
+                    <shadow type="text" id="g*M$[Xs0?nfJLq9*/i/8">
+                      <field name="TEXT">./cloth/users_cloth/</field>
+                    </shadow>
+                  </value>
+                  <statement name="DO">
+                    <block type="variables_set" id="2nO(l~B=uA?g`ts}69`I">
+                      <field name="VAR" id="-wQv=LET%PJR]xb7OJ#c">saved_conf_url</field>
+                      <value name="VALUE">
+                        <block type="setUrlParam" id="MQq95IS=tK4RY8B:8+[_">
+                          <value name="URL">
+                            <shadow type="text" id="[-a0r*_jnCB-5r2WkD;v">
+                              <field name="TEXT">https://sandbox.soft8soft.com/</field>
+                            </shadow>
+                            <block type="getUrlData" id="||qeqTfc_nCDUUFI0d%5">
+                              <field name="KIND">URL</field>
+                              <field name="PARENT">FALSE</field>
+                            </block>
+                          </value>
+                          <value name="NAME">
+                            <shadow type="text" id="b/pXq%wP(Si@wVIuHsb~">
+                              <field name="TEXT">image_url</field>
+                            </shadow>
+                          </value>
+                          <value name="VALUE">
+                            <shadow type="text" id="eeNB]ljb-(-q7X-~uy#2">
+                              <field name="TEXT"/>
+                            </shadow>
+                            <block type="dictGet" id="duh?5#baTC*/]GM:oy,*">
+                              <value name="DICT">
+                                <block type="loadedFile" id="_~WIwjWQ#_OY^ACDSL~Y"/>
+                              </value>
+                              <value name="KEY">
+                                <shadow type="text" id="eEgLu$p;6pWRBqmY2U/B">
+                                  <field name="TEXT">link</field>
+                                </shadow>
+                              </value>
+                            </block>
+                          </value>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="openWebPage" id="38gG/{A6i4e9uVjKq?u*">
+                          <field name="MODE">NO_RELOAD</field>
+                          <value name="URL">
+                            <shadow type="text" id="psa)Hz_CfA1DKO;kpN;G">
+                              <field name="TEXT">https://www.soft8soft.com/</field>
+                            </shadow>
+                            <block type="variables_get" id="QM;hcG+UdR|nEYW+YIe$">
+                              <field name="VAR" id="-wQv=LET%PJR]xb7OJ#c">saved_conf_url</field>
+                            </block>
+                          </value>
+                        </block>
+                      </next>
+                    </block>
+                  </statement>
+                </block>
+              </next>
+            </block>
+          </statement>
+          <next>
+            <block type="whenHovered" id="Cj9p]NZ:Q031^Ewdfs99">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false"></mutation>
+              <field name="X_RAY">FALSE</field>
+              <value name="VALUE">
+                <shadow type="objectList">
+                  <field name="FIELDNAME">&lt;none&gt;</field>
+                </shadow>
+                <block type="objectList" id="~}/8k^lI@*U|Gl}!UMX#">
+                  <field name="FIELDNAME">osnova</field>
+                </block>
+              </value>
+              <statement name="DO_OVER">
+                <block type="outline" id="bf/y/`CZsGKH#i7h,+;*">
+                  <field name="DO_WHAT">ENABLE</field>
+                  <value name="TARGET">
+                    <shadow type="objectList">
+                      <field name="FIELDNAME">&lt;none&gt;</field>
+                    </shadow>
+                    <block type="objectList" id="j7*+6oad7G?%/#9qS;_/">
+                      <field name="FIELDNAME">osnova</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="whenClicked" id="FJI(5%H@#7TIgJ[@#W6S">
+                      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+                      <field name="X_RAY">FALSE</field>
+                      <field name="DOUBLE_CLICK">FALSE</field>
+                      <field name="LEFT_BUTTON">TRUE</field>
+                      <field name="MIDDLE_BUTTON">TRUE</field>
+                      <field name="RIGHT_BUTTON">TRUE</field>
+                      <value name="VALUE">
+                        <shadow type="objectList" id="FjQs,Z,,0rarnhDnfT{[">
+                          <field name="FIELDNAME">osnova</field>
+                        </shadow>
+                      </value>
+                      <statement name="DO">
+                        <block type="outline" id=".~WuL+r}~B4@r{|;kE@^">
+                          <field name="DO_WHAT">ENABLE</field>
+                          <value name="TARGET">
+                            <shadow type="objectList">
+                              <field name="FIELDNAME">&lt;none&gt;</field>
+                            </shadow>
+                            <block type="objectList" id="D*yb]_mQw7yplF!NQB?D">
+                              <field name="FIELDNAME">osnova</field>
+                            </block>
+                          </value>
+                          <next>
+                            <block type="replaceTexture" id="eIEpAK`Yu42y#jR@Z~Mu">
+                              <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false"></mutation>
+                              <field name="OLD_TEX_NAME">1_0-specular.png</field>
+                              <value name="MATERIAL">
+                                <shadow type="materialList">
+                                  <field name="FIELDNAME">&lt;none&gt;</field>
+                                </shadow>
+                                <block type="materialList" id="W;u3jw.,pM4oGrCQL!Xp">
+                                  <field name="FIELDNAME">osnova_main</field>
+                                </block>
+                              </value>
+                              <value name="NEW_TEX_URL">
+                                <shadow type="text" id="z_+ZsUCBI)}S6!9JQGFs">
+                                  <field name="TEXT">./cloth/rogozhka/9.jpg</field>
+                                </shadow>
+                                <block type="variables_get" id="8QtD,z}J8LHj81o++Gro">
+                                  <field name="VAR" id="?rdEqG_!+JjSKO#36H/A">textura_img_ind</field>
+                                </block>
+                              </value>
+                              <next>
+                                <block type="variables_set" id="-$6t=W/iM^2DxGibiRKx">
+                                  <field name="VAR" id="?rdEqG_!+JjSKO#36H/A">textura_img_ind</field>
+                                  <value name="VALUE">
+                                    <block type="variables_get" id="mo;I$oPbX3g:`/d/w2/x">
+                                      <field name="VAR" id="-hxV@8)1^=`Mop;Q:I#D">textura_img</field>
+                                    </block>
+                                  </value>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </statement>
+                    </block>
+                  </next>
+                </block>
+              </statement>
+              <statement name="DO_OUT">
+                <block type="outline" id="JR)gmf7(wPR?EOg]r*Yz">
+                  <field name="DO_WHAT">DISABLE</field>
+                  <value name="TARGET">
+                    <shadow type="objectList">
+                      <field name="FIELDNAME">&lt;none&gt;</field>
+                    </shadow>
+                    <block type="objectList" id="Lpjz(s.y{2cDz9^2Q0Nv">
+                      <field name="FIELDNAME">osnova</field>
+                    </block>
+                  </value>
+                </block>
+              </statement>
+              <next>
+                <block type="whenHovered" id="bCEojmS:%:6(Hot.HaQb">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false"></mutation>
+                  <field name="X_RAY">FALSE</field>
+                  <value name="VALUE">
+                    <shadow type="objectList">
+                      <field name="FIELDNAME">&lt;none&gt;</field>
+                    </shadow>
+                    <block type="objectList" id="mc7iSZ^4W4lAHYle@m45">
+                      <field name="FIELDNAME">poduski</field>
+                    </block>
+                  </value>
+                  <statement name="DO_OVER">
+                    <block type="outline" id="|pOlL@@p+!Lt$,h5ijG{">
+                      <field name="DO_WHAT">ENABLE</field>
+                      <value name="TARGET">
+                        <shadow type="objectList">
+                          <field name="FIELDNAME">&lt;none&gt;</field>
+                        </shadow>
+                        <block type="objectList" id="kH8!3-yL-e[4F8ksI6/)">
+                          <field name="FIELDNAME">poduski</field>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="whenClicked" id="ezQayxpd4-fii:nEvkS#">
+                          <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+                          <field name="X_RAY">FALSE</field>
+                          <field name="DOUBLE_CLICK">FALSE</field>
+                          <field name="LEFT_BUTTON">TRUE</field>
+                          <field name="MIDDLE_BUTTON">TRUE</field>
+                          <field name="RIGHT_BUTTON">TRUE</field>
+                          <value name="VALUE">
+                            <shadow type="objectList" id="?d#T)rgp1:21;=10oO8,">
+                              <field name="FIELDNAME">poduski</field>
+                            </shadow>
+                          </value>
+                          <statement name="DO">
+                            <block type="outline" id="F3#l/J]]ywb9VB08{6#j">
+                              <field name="DO_WHAT">ENABLE</field>
+                              <value name="TARGET">
+                                <shadow type="objectList">
+                                  <field name="FIELDNAME">&lt;none&gt;</field>
+                                </shadow>
+                                <block type="objectList" id="I_FT9?,n{#sV_C,}v-%.">
+                                  <field name="FIELDNAME">poduski</field>
+                                </block>
+                              </value>
+                              <next>
+                                <block type="replaceTexture" id="QS8LO_eMYxQ]CWmGb}!t">
+                                  <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false"></mutation>
+                                  <field name="OLD_TEX_NAME">1_2.jpg</field>
+                                  <value name="MATERIAL">
+                                    <shadow type="materialList">
+                                      <field name="FIELDNAME">&lt;none&gt;</field>
+                                    </shadow>
+                                    <block type="materialList" id="MTv:aEgAKydii{3]=UQo">
+                                      <field name="FIELDNAME">posushki_small</field>
+                                    </block>
+                                  </value>
+                                  <value name="NEW_TEX_URL">
+                                    <shadow type="text">
+                                      <field name="TEXT">./cloth/rogozhka/9.jpg</field>
+                                    </shadow>
+                                    <block type="variables_get" id=".9|zKo[#C[Ul?R@Vz7zP">
+                                      <field name="VAR" id="?rdEqG_!+JjSKO#36H/A">textura_img_ind</field>
+                                    </block>
+                                  </value>
+                                  <next>
+                                    <block type="variables_set" id=",k!NPNvls!9vqZXEzD,%">
+                                      <field name="VAR" id="?rdEqG_!+JjSKO#36H/A">textura_img_ind</field>
+                                      <value name="VALUE">
+                                        <block type="variables_get" id="8A$+?}+3/`Cmj:7Rl;Hp">
+                                          <field name="VAR" id="-hxV@8)1^=`Mop;Q:I#D">textura_img</field>
+                                        </block>
+                                      </value>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </statement>
+                        </block>
+                      </next>
+                    </block>
+                  </statement>
+                  <statement name="DO_OUT">
+                    <block type="outline" id="O{F~3Ifq@d5McLauD@a!">
+                      <field name="DO_WHAT">DISABLE</field>
+                      <value name="TARGET">
+                        <shadow type="objectList">
+                          <field name="FIELDNAME">&lt;none&gt;</field>
+                        </shadow>
+                        <block type="objectList" id="BabLJdPGsHnoz.Ee]2Mn">
+                          <field name="FIELDNAME">poduski</field>
+                        </block>
+                      </value>
+                    </block>
+                  </statement>
+                  <next>
+                    <block type="whenHovered" id="k:bHOw};dlHasZAbuSE,">
+                      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false"></mutation>
+                      <field name="X_RAY">FALSE</field>
+                      <value name="VALUE">
+                        <shadow type="objectList">
+                          <field name="FIELDNAME">&lt;none&gt;</field>
+                        </shadow>
+                        <block type="objectList" id="Ms1xRKvm!t0nQ[znv1,X">
+                          <field name="FIELDNAME">karkas</field>
+                        </block>
+                      </value>
+                      <statement name="DO_OVER">
+                        <block type="outline" id="*j9`~YVZG;O5CGny|GF%">
+                          <field name="DO_WHAT">ENABLE</field>
+                          <value name="TARGET">
+                            <shadow type="objectList">
+                              <field name="FIELDNAME">&lt;none&gt;</field>
+                            </shadow>
+                            <block type="objectList" id="5R[|VOElzjTMIef2lL=w">
+                              <field name="FIELDNAME">karkas</field>
+                            </block>
+                          </value>
+                          <next>
+                            <block type="whenClicked" id="-`NQTuOxztz]J#w;E?3_">
+                              <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+                              <field name="X_RAY">FALSE</field>
+                              <field name="DOUBLE_CLICK">FALSE</field>
+                              <field name="LEFT_BUTTON">TRUE</field>
+                              <field name="MIDDLE_BUTTON">TRUE</field>
+                              <field name="RIGHT_BUTTON">TRUE</field>
+                              <value name="VALUE">
+                                <shadow type="objectList" id="{)5Et*kaN0:!/Hn1a;AF">
+                                  <field name="FIELDNAME">karkas</field>
+                                </shadow>
+                              </value>
+                              <statement name="DO">
+                                <block type="outline" id="aV2o]nKSja1/JLN4P6R)">
+                                  <field name="DO_WHAT">ENABLE</field>
+                                  <value name="TARGET">
+                                    <shadow type="objectList">
+                                      <field name="FIELDNAME">&lt;none&gt;</field>
+                                    </shadow>
+                                    <block type="objectList" id="b4D8KDRYPVOikdHkX!=D">
+                                      <field name="FIELDNAME">karkas</field>
+                                    </block>
+                                  </value>
+                                  <next>
+                                    <block type="replaceTexture" id="$MSFDS!]RjS}I%5jU3r}">
+                                      <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false"></mutation>
+                                      <field name="OLD_TEX_NAME">1_3.jpg</field>
+                                      <value name="MATERIAL">
+                                        <shadow type="materialList">
+                                          <field name="FIELDNAME">&lt;none&gt;</field>
+                                        </shadow>
+                                        <block type="materialList" id="C()48Pmhdc.DuUx7ktdw">
+                                          <field name="FIELDNAME">karkas</field>
+                                        </block>
+                                      </value>
+                                      <value name="NEW_TEX_URL">
+                                        <shadow type="text">
+                                          <field name="TEXT">./cloth/rogozhka/10.jpg</field>
+                                        </shadow>
+                                        <block type="variables_get" id="XHWDlmOIH@VXBQXu24=}">
+                                          <field name="VAR" id="?rdEqG_!+JjSKO#36H/A">textura_img_ind</field>
+                                        </block>
+                                      </value>
+                                      <next>
+                                        <block type="variables_set" id="PI^t2}HFQ2V*E/Z$2B_I">
+                                          <field name="VAR" id="?rdEqG_!+JjSKO#36H/A">textura_img_ind</field>
+                                          <value name="VALUE">
+                                            <block type="variables_get" id="0l4zhrSIVE!wC9jS^e;3">
+                                              <field name="VAR" id="-hxV@8)1^=`Mop;Q:I#D">textura_img</field>
+                                            </block>
+                                          </value>
+                                        </block>
+                                      </next>
+                                    </block>
+                                  </next>
+                                </block>
+                              </statement>
+                            </block>
+                          </next>
+                        </block>
+                      </statement>
+                      <statement name="DO_OUT">
+                        <block type="outline" id="KbNY-DtvN^`fqG?uog(+">
+                          <field name="DO_WHAT">DISABLE</field>
+                          <value name="TARGET">
+                            <shadow type="objectList">
+                              <field name="FIELDNAME">&lt;none&gt;</field>
+                            </shadow>
+                            <block type="objectList" id="b%J12eY_n=g6SbtD-1{R">
+                              <field name="FIELDNAME">karkas</field>
+                            </block>
+                          </value>
+                        </block>
+                      </statement>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="whenHovered" id="IZV_LTsP@VgZS^kkR[K:" x="-390" y="-2390">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false"></mutation>
+      <field name="X_RAY">FALSE</field>
+      <value name="VALUE">
+        <shadow type="objectList" id="$4j*z59g+;ymT9HZP!+S">
+          <field name="FIELDNAME">&lt;none&gt;</field>
+        </shadow>
+        <block type="objectList" id="{V8qMa/1tI/a~$oB=#kO">
+          <field name="FIELDNAME">osnova</field>
+        </block>
+      </value>
+      <statement name="DO_OVER">
+        <block type="outline" id="Muad:3gn[5IhmN1Wfm7p">
+          <field name="DO_WHAT">ENABLE</field>
+          <value name="TARGET">
+            <shadow type="objectList" id="H)g%J#oBn$EMEx5,jPSF">
+              <field name="FIELDNAME">&lt;none&gt;</field>
+            </shadow>
+            <block type="objectList" id=".A$7rrZW^TWmM87[{sM/">
+              <field name="FIELDNAME">osnova</field>
+            </block>
+          </value>
+          <next>
+            <block type="variables_set" id="g3d1-]GNWzD}t79Y!GjS">
+              <field name="VAR" id="-hxV@8)1^=`Mop;Q:I#D">textura_img</field>
+              <value name="VALUE">
+                <block type="getHTMLElemAttribute" id="G5#t)pw33uH,{hAY~T-]">
+                  <field name="ATTRIBUTE">src</field>
+                  <field name="PARENT">TRUE</field>
+                  <value name="ID">
+                    <shadow type="text" id="[Gv_!:M|3~iI;?,pvxa]">
+                      <field name="TEXT">m_odnotonra</field>
+                    </shadow>
+                  </value>
+                </block>
+              </value>
+              <next>
+                <block type="whenClicked" id="[.*t03rK$u=!sM[d4%kC">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+                  <field name="X_RAY">FALSE</field>
+                  <field name="DOUBLE_CLICK">FALSE</field>
+                  <field name="LEFT_BUTTON">TRUE</field>
+                  <field name="MIDDLE_BUTTON">TRUE</field>
+                  <field name="RIGHT_BUTTON">TRUE</field>
+                  <value name="VALUE">
+                    <shadow type="objectList" id="}J)7DexaPbTST0uqaL^n">
+                      <field name="FIELDNAME">osnova</field>
+                    </shadow>
+                  </value>
+                  <statement name="DO">
+                    <block type="outline" id="kxvyCR7A:vWpW]PG8cF0">
+                      <field name="DO_WHAT">ENABLE</field>
+                      <value name="TARGET">
+                        <shadow type="objectList">
+                          <field name="FIELDNAME">&lt;none&gt;</field>
+                        </shadow>
+                        <block type="objectList" id="?P#N~MAwqYnE}GCO^zJ1">
+                          <field name="FIELDNAME">osnova</field>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="replaceTexture" id="5EQoR+:udK}.?J}Fa=p=">
+                          <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false"></mutation>
+                          <field name="OLD_TEX_NAME">1_0-specular.png</field>
+                          <value name="MATERIAL">
+                            <shadow type="materialList">
+                              <field name="FIELDNAME">&lt;none&gt;</field>
+                            </shadow>
+                            <block type="materialList" id="I!l;uweuQsVJMW5a?!9t">
+                              <field name="FIELDNAME">osnova_main</field>
+                            </block>
+                          </value>
+                          <value name="NEW_TEX_URL">
+                            <shadow type="text" id="4uq+[xv9gO;RXCx=to17">
+                              <field name="TEXT">./cloth/rogozhka/9.jpg</field>
+                            </shadow>
+                            <block type="variables_get" id="Ga=dgPIisI/U0irV}S:Z">
+                              <field name="VAR" id="-hxV@8)1^=`Mop;Q:I#D">textura_img</field>
+                            </block>
+                          </value>
+                        </block>
+                      </next>
+                    </block>
+                  </statement>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+      <statement name="DO_OUT">
+        <block type="outline" id="fZN01OL:ZS`2G%}wOp-Y">
+          <field name="DO_WHAT">DISABLE</field>
+          <value name="TARGET">
+            <shadow type="objectList">
+              <field name="FIELDNAME">&lt;none&gt;</field>
+            </shadow>
+            <block type="objectList" id="vNNoN.(ac;ZoY}=U6QIx">
+              <field name="FIELDNAME">osnova</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+      <next>
+        <block type="whenHovered" id="`=.|aIWdb?rg)KD2X-Z=">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false"></mutation>
+          <field name="X_RAY">FALSE</field>
+          <value name="VALUE">
+            <shadow type="objectList">
+              <field name="FIELDNAME">&lt;none&gt;</field>
+            </shadow>
+            <block type="objectList" id="lg$zC4t*mB+?0psiE[tP">
+              <field name="FIELDNAME">poduski</field>
+            </block>
+          </value>
+          <statement name="DO_OVER">
+            <block type="outline" id="p],~f%}q{(Xfp?L*TmS#">
+              <field name="DO_WHAT">ENABLE</field>
+              <value name="TARGET">
+                <shadow type="objectList">
+                  <field name="FIELDNAME">&lt;none&gt;</field>
+                </shadow>
+                <block type="objectList" id="$+9j2g1Zt_I;Gah[ghfQ">
+                  <field name="FIELDNAME">poduski</field>
+                </block>
+              </value>
+              <next>
+                <block type="variables_set" id="p-|Wem^s0j}cS+lq+*9A">
+                  <field name="VAR" id="-hxV@8)1^=`Mop;Q:I#D">textura_img</field>
+                  <value name="VALUE">
+                    <block type="getHTMLElemAttribute" id="Az7k]2f63^KJIzbT?RvF">
+                      <field name="ATTRIBUTE">src</field>
+                      <field name="PARENT">TRUE</field>
+                      <value name="ID">
+                        <shadow type="text" id="!22N[x@?9Cf5QghJgHey">
+                          <field name="TEXT">m_odnotonra</field>
+                        </shadow>
+                      </value>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="whenClicked" id="bW?ofaj1/.D/$k1zh{hk">
+                      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+                      <field name="X_RAY">FALSE</field>
+                      <field name="DOUBLE_CLICK">FALSE</field>
+                      <field name="LEFT_BUTTON">TRUE</field>
+                      <field name="MIDDLE_BUTTON">TRUE</field>
+                      <field name="RIGHT_BUTTON">TRUE</field>
+                      <value name="VALUE">
+                        <shadow type="objectList" id="z%?*Hi62O4+6Zi#s)w6s">
+                          <field name="FIELDNAME">poduski</field>
+                        </shadow>
+                      </value>
+                      <statement name="DO">
+                        <block type="outline" id="]Y0ulq6lUg4XL`(itFa)">
+                          <field name="DO_WHAT">ENABLE</field>
+                          <value name="TARGET">
+                            <shadow type="objectList">
+                              <field name="FIELDNAME">&lt;none&gt;</field>
+                            </shadow>
+                            <block type="objectList" id="3hTPJ3caXGfG,@qsBgp1">
+                              <field name="FIELDNAME">poduski</field>
+                            </block>
+                          </value>
+                          <next>
+                            <block type="replaceTexture" id="1i))c8n2}0GUOCbnx5:_">
+                              <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false"></mutation>
+                              <field name="OLD_TEX_NAME">1_2.jpg</field>
+                              <value name="MATERIAL">
+                                <shadow type="materialList">
+                                  <field name="FIELDNAME">&lt;none&gt;</field>
+                                </shadow>
+                                <block type="materialList" id="3[!rT$,We@|14|wAs59^">
+                                  <field name="FIELDNAME">posushki_small</field>
+                                </block>
+                              </value>
+                              <value name="NEW_TEX_URL">
+                                <shadow type="text">
+                                  <field name="TEXT">./cloth/rogozhka/9.jpg</field>
+                                </shadow>
+                                <block type="variables_get" id="23-7Z`eQ~vb/i~X,RNe]">
+                                  <field name="VAR" id="-hxV@8)1^=`Mop;Q:I#D">textura_img</field>
+                                </block>
+                              </value>
+                            </block>
+                          </next>
+                        </block>
+                      </statement>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </statement>
+          <statement name="DO_OUT">
+            <block type="outline" id="K^k*LN]goxSvL;6GhP}5">
+              <field name="DO_WHAT">DISABLE</field>
+              <value name="TARGET">
+                <shadow type="objectList">
+                  <field name="FIELDNAME">&lt;none&gt;</field>
+                </shadow>
+                <block type="objectList" id="!7~YY6xl)D[V0@-8^Z)J">
+                  <field name="FIELDNAME">poduski</field>
+                </block>
+              </value>
+            </block>
+          </statement>
+          <next>
+            <block type="whenHovered" id="zhOHTJ/b^H4VnIY1!(Tg">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false"></mutation>
+              <field name="X_RAY">FALSE</field>
+              <value name="VALUE">
+                <shadow type="objectList">
+                  <field name="FIELDNAME">&lt;none&gt;</field>
+                </shadow>
+                <block type="objectList" id="2+J^;]Q^J3*,NA-Vpv_(">
+                  <field name="FIELDNAME">karkas</field>
+                </block>
+              </value>
+              <statement name="DO_OVER">
+                <block type="outline" id="=z*|k#cIYQ(Ag$)$en-E">
+                  <field name="DO_WHAT">ENABLE</field>
+                  <value name="TARGET">
+                    <shadow type="objectList">
+                      <field name="FIELDNAME">&lt;none&gt;</field>
+                    </shadow>
+                    <block type="objectList" id="~%;L$E^gW;bpo!4;_U8s">
+                      <field name="FIELDNAME">karkas</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="variables_set" id="v_gA7r3qD._p;4-NT9hR">
+                      <field name="VAR" id="-hxV@8)1^=`Mop;Q:I#D">textura_img</field>
+                      <value name="VALUE">
+                        <block type="getHTMLElemAttribute" id="t6ey55MRxxS{k,-9weHR">
+                          <field name="ATTRIBUTE">src</field>
+                          <field name="PARENT">TRUE</field>
+                          <value name="ID">
+                            <shadow type="text" id="6?^.oS=!P7L%G6q*i`w?">
+                              <field name="TEXT">m_odnotonra</field>
+                            </shadow>
+                          </value>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="whenClicked" id="Q(%lQ^Bq,fD8Jaa2OX!:">
+                          <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+                          <field name="X_RAY">FALSE</field>
+                          <field name="DOUBLE_CLICK">FALSE</field>
+                          <field name="LEFT_BUTTON">TRUE</field>
+                          <field name="MIDDLE_BUTTON">TRUE</field>
+                          <field name="RIGHT_BUTTON">TRUE</field>
+                          <value name="VALUE">
+                            <shadow type="objectList" id=";p.AmNY0~]9]~uPDl)xW">
+                              <field name="FIELDNAME">karkas</field>
+                            </shadow>
+                          </value>
+                          <statement name="DO">
+                            <block type="outline" id="?+!~6ITSweOfaw8:gLWT">
+                              <field name="DO_WHAT">ENABLE</field>
+                              <value name="TARGET">
+                                <shadow type="objectList">
+                                  <field name="FIELDNAME">&lt;none&gt;</field>
+                                </shadow>
+                                <block type="objectList" id="oVcWV8q}?ug(P~[kHiK@">
+                                  <field name="FIELDNAME">karkas</field>
+                                </block>
+                              </value>
+                              <next>
+                                <block type="replaceTexture" id="]w]$-zTS5^6@3/!Cy/gE">
+                                  <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false"></mutation>
+                                  <field name="OLD_TEX_NAME">1_3.jpg</field>
+                                  <value name="MATERIAL">
+                                    <shadow type="materialList">
+                                      <field name="FIELDNAME">&lt;none&gt;</field>
+                                    </shadow>
+                                    <block type="materialList" id="`oW7bvkB9@EfFHl9NrXB">
+                                      <field name="FIELDNAME">karkas</field>
+                                    </block>
+                                  </value>
+                                  <value name="NEW_TEX_URL">
+                                    <shadow type="text" id="m;v7wKI2m([XUE=rYnht">
+                                      <field name="TEXT">./cloth/rogozhka/10.jpg</field>
+                                    </shadow>
+                                    <block type="variables_get" id="L)ck,]u0Onf$#h!l)sx.">
+                                      <field name="VAR" id="-hxV@8)1^=`Mop;Q:I#D">textura_img</field>
+                                    </block>
+                                  </value>
+                                </block>
+                              </next>
+                            </block>
+                          </statement>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </statement>
+              <statement name="DO_OUT">
+                <block type="outline" id="b;^c]A5aQ[y4w*zsEJ=h">
+                  <field name="DO_WHAT">DISABLE</field>
+                  <value name="TARGET">
+                    <shadow type="objectList">
+                      <field name="FIELDNAME">&lt;none&gt;</field>
+                    </shadow>
+                    <block type="objectList" id="eWvzuFl|N{{UQGJwTdld">
+                      <field name="FIELDNAME">karkas</field>
+                    </block>
+                  </value>
+                </block>
+              </statement>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+  </tab>
+  <editorsettings viewport-x="1134" viewport-y="28" viewport-w="768" viewport-h="471.5" viewport-hidden="true" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>

@@ -1,0 +1,78 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="true" scrollx="1115" scrolly="554" scale="0.9">
+    <block xmlns="https://developers.google.com/blockly/xml" type="initSettings" id="gpcA^DEOf2!nKXG-)Tzg" x="-1230" y="-610">
+      <field name="LOAD_COMP_ASSETS">FALSE</field>
+      <field name="FULLSCREEN">TRUE</field>
+      <field name="BKG_TRANSPARENCY">TRUE</field>
+      <field name="PRESERVE_DRAW_BUF">FALSE</field>
+      <field name="FADE_ANNOTATIONS">TRUE</field>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="!E3`QF7n@VD`.R|t|tT/" x="-1230" y="-210">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <shadow type="text" id="yjs%Ek1rcVQz#)Txf{Z#">
+          <field name="TEXT"/>
+        </shadow>
+        <block type="text" id="~`1P0=r6zD+un.u.ouf5">
+          <field name="TEXT">m_odnotonra</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="setCSSRuleStyle" id="uz{vu=-/Pm~wCD!7Aq/k">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" mediaruleslot="false"></mutation>
+          <field name="PROPERTY">alignContent</field>
+          <field name="PARENT">TRUE</field>
+          <value name="VALUE">
+            <block type="text" id="x(|0o4~?n@dmos)Q!;.:">
+              <field name="TEXT">http://localhost:8668/applications/9-log/cloth/rogozhka/6.jpg</field>
+            </block>
+          </value>
+          <value name="ID">
+            <shadow type="text" id="2uaX:f`97ufQ_cQpxzg1">
+              <field name="TEXT"/>
+            </shadow>
+            <block type="text" id="Kw5jzkS(FEd}+@vBOXj.">
+              <field name="TEXT">vabor1</field>
+            </block>
+          </value>
+          <next>
+            <block type="console.log" id="5qAP2$g{okFny=XgAZgj">
+              <value name="VALUE">
+                <shadow type="text" id="4QMM9$k/tn#J`pd2vF~H">
+                  <field name="TEXT">ну давай же....</field>
+                </shadow>
+              </value>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="setHTMLElemStyle" id="dD3lprmR%0Oxou*+;UF~" x="-1170" y="-50">
+      <field name="PROPERTY">backgroundColor</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <shadow type="text" id="4@b0WFyJ[v/j2YRDG|=Q">
+          <field name="TEXT"/>
+        </shadow>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="text" id="O~a!ZlZ6gBgj;]h52wG(" x="-910" y="10">
+      <field name="TEXT">orange</field>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="text" id="pG6^oY#`G|HIS,76dPLa" x="-510" y="70">
+      <field name="TEXT">r1_1</field>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="setHTMLElemStyle" id="gN0eH)tXaxWbL8AY_:u`" x="-910" y="150">
+      <field name="PROPERTY">backgroundColor</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <shadow type="text" id="WN}N22u,R%VrAP3MpPjd">
+          <field name="TEXT"/>
+        </shadow>
+      </value>
+    </block>
+  </tab>
+  <tab name="main" type="MainTab" active="false" scrollx="1115" scrolly="554" scale="0.9"></tab>
+  <editorsettings viewport-x="1422" viewport-y="28" viewport-w="960" viewport-h="591.5" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>

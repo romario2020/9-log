@@ -1,0 +1,305 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="false" scrollx="1119.9841633471958" scrolly="505.8849027884785" scale="0.8227024747918819">
+    <block xmlns="https://developers.google.com/blockly/xml" type="initSettings" id="gpcA^DEOf2!nKXG-)Tzg" x="-1230" y="-610">
+      <field name="LOAD_COMP_ASSETS">FALSE</field>
+      <field name="FULLSCREEN">TRUE</field>
+      <field name="BKG_TRANSPARENCY">TRUE</field>
+      <field name="PRESERVE_DRAW_BUF">FALSE</field>
+      <field name="FADE_ANNOTATIONS">TRUE</field>
+    </block>
+  </tab>
+  <tab name="main" type="MainTab" active="true" scrollx="1113.888916015625" scrolly="668.4444732666016" scale="0.9">
+    <variables xmlns="https://developers.google.com/blockly/xml">
+      <variable id="-hxV@8)1^=`Mop;Q:I#D" type="">textura_img</variable>
+    </variables>
+    <block xmlns="https://developers.google.com/blockly/xml" type="whenHovered" id="IZV_LTsP@VgZS^kkR[K:" x="-1150" y="-690">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false"></mutation>
+      <field name="X_RAY">FALSE</field>
+      <value name="VALUE">
+        <shadow type="objectList" id="$4j*z59g+;ymT9HZP!+S">
+          <field name="FIELDNAME">&lt;none&gt;</field>
+        </shadow>
+        <block type="objectList" id="{V8qMa/1tI/a~$oB=#kO">
+          <field name="FIELDNAME">osnova</field>
+        </block>
+      </value>
+      <statement name="DO_OVER">
+        <block type="outline" id="Muad:3gn[5IhmN1Wfm7p">
+          <field name="DO_WHAT">ENABLE</field>
+          <value name="TARGET">
+            <shadow type="objectList" id="H)g%J#oBn$EMEx5,jPSF">
+              <field name="FIELDNAME">&lt;none&gt;</field>
+            </shadow>
+            <block type="objectList" id=".A$7rrZW^TWmM87[{sM/">
+              <field name="FIELDNAME">osnova</field>
+            </block>
+          </value>
+          <next>
+            <block type="whenClicked" id="[.*t03rK$u=!sM[d4%kC">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+              <field name="X_RAY">FALSE</field>
+              <field name="DOUBLE_CLICK">FALSE</field>
+              <field name="LEFT_BUTTON">TRUE</field>
+              <field name="MIDDLE_BUTTON">TRUE</field>
+              <field name="RIGHT_BUTTON">TRUE</field>
+              <value name="VALUE">
+                <shadow type="objectList" id="}J)7DexaPbTST0uqaL^n">
+                  <field name="FIELDNAME">osnova</field>
+                </shadow>
+              </value>
+              <statement name="DO">
+                <block type="outline" id="kxvyCR7A:vWpW]PG8cF0">
+                  <field name="DO_WHAT">ENABLE</field>
+                  <value name="TARGET">
+                    <shadow type="objectList">
+                      <field name="FIELDNAME">&lt;none&gt;</field>
+                    </shadow>
+                    <block type="objectList" id="?P#N~MAwqYnE}GCO^zJ1">
+                      <field name="FIELDNAME">osnova</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="replaceTexture" id="DU]~K=Kt?K=9}*?=an!B">
+                      <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false"></mutation>
+                      <field name="OLD_TEX_NAME">1_0-specular.png</field>
+                      <value name="MATERIAL">
+                        <shadow type="materialList" id="G@(Ialqwv#@M[~$i-T7c">
+                          <field name="FIELDNAME">&lt;none&gt;</field>
+                        </shadow>
+                        <block type="materialList" id="h=~@MirLhQQ5,V,LuPB,">
+                          <field name="FIELDNAME">osnova_main</field>
+                        </block>
+                      </value>
+                      <value name="NEW_TEX_URL">
+                        <shadow type="text" id="~UQb[]tw]WQIK0`$n;]7">
+                          <field name="TEXT">./cloth/rogozhka/9.jpg</field>
+                        </shadow>
+                      </value>
+                    </block>
+                  </next>
+                </block>
+              </statement>
+            </block>
+          </next>
+        </block>
+      </statement>
+      <statement name="DO_OUT">
+        <block type="outline" id="fZN01OL:ZS`2G%}wOp-Y">
+          <field name="DO_WHAT">DISABLE</field>
+          <value name="TARGET">
+            <shadow type="objectList">
+              <field name="FIELDNAME">&lt;none&gt;</field>
+            </shadow>
+            <block type="objectList" id="vNNoN.(ac;ZoY}=U6QIx">
+              <field name="FIELDNAME">osnova</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="-)]a?BW0$y#G}/[j].|Y" x="-1170" y="-350">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <shadow type="text" id="n64OAEt_RL/28#Ez@DMf">
+          <field name="TEXT">r1_1</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="createCSSRule" id="v.nMnlgoz+4`DNFLdm!L">
+          <field name="PARENT">TRUE</field>
+          <value name="CSS_RULE">
+            <shadow type="text" id="2(0c+5vI,?mjq}qR-P.!">
+              <field name="TEXT">#m_odnotonra</field>
+            </shadow>
+          </value>
+          <value name="CSS_RULE_CONT">
+            <shadow type="text" id="N*Eot/W.ob=%jW=12~0.">
+              <field name="TEXT">background-image: url(./cloth/rogozhka/9.jpg)</field>
+            </shadow>
+            <block type="text_join" id="k@HaBrmTc.!7,+mX:A=K" inline="true">
+              <mutation items="3"/>
+              <value name="ADD0">
+                <block type="text" id="jO#]Hp.Rm#t$`f/T^_Cp">
+                  <field name="TEXT">background-image: url(</field>
+                </block>
+              </value>
+              <value name="ADD1">
+                <block type="text" id="f,/Jd$0WawUG[l}y[8zA">
+                  <field name="TEXT">./cloth/rogozhka/9.jpg</field>
+                </block>
+              </value>
+              <value name="ADD2">
+                <block type="text" id="4{!6JT[HDsu*$6Anbl,H">
+                  <field name="TEXT">)</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <next>
+            <block type="variables_set" id="Kg,5xw^9E(J%:Um$$u)K">
+              <field name="VAR" id="-hxV@8)1^=`Mop;Q:I#D">textura_img</field>
+              <value name="VALUE">
+                <block type="text" id="$lfK4GE/x,SGVK@Eh091">
+                  <field name="TEXT">./cloth/rogozhka/9.jpg</field>
+                </block>
+              </value>
+              <next>
+                <block type="console.log" id=":!6tkV`0@G2ApE:AhAPX">
+                  <value name="VALUE">
+                    <shadow type="text" id="Do4[k4Na?@CSZQCAgygw">
+                      <field name="TEXT">Hello, Verge!</field>
+                    </shadow>
+                    <block type="variables_get" id="1-J%wj#,KM8,1^9+8BsK">
+                      <field name="VAR" id="-hxV@8)1^=`Mop;Q:I#D">textura_img</field>
+                    </block>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_get" id="Ga=dgPIisI/U0irV}S:Z" x="-790" y="-150">
+      <field name="VAR" id="-hxV@8)1^=`Mop;Q:I#D">textura_img</field>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="=,r3JoZ#EvcPVm69-74`" x="-1130" y="-110">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <shadow type="text" id="{*4I2_2GLgH6Hk{|x]0F">
+          <field name="TEXT">r1_2</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="createCSSRule" id="]]l8da}LX4}ptEpV`VyB">
+          <field name="PARENT">TRUE</field>
+          <value name="CSS_RULE">
+            <shadow type="text" id="Vc-/3=z,cZ.%UIdh/eW/">
+              <field name="TEXT">#m_odnotonra</field>
+            </shadow>
+          </value>
+          <value name="CSS_RULE_CONT">
+            <shadow type="text">
+              <field name="TEXT">background-image: url(./cloth/rogozhka/9.jpg)</field>
+            </shadow>
+            <block type="text_join" id="$HjxALq5AIBvv:.I=h$#" inline="true">
+              <mutation items="3"/>
+              <value name="ADD0">
+                <block type="text" id="86?[.vPb8Cb$JemUty`4">
+                  <field name="TEXT">background-image: url(</field>
+                </block>
+              </value>
+              <value name="ADD1">
+                <block type="text" id=",gXxzOTebUfcj-G}-DR:">
+                  <field name="TEXT">./cloth/rogozhka/9.jpg</field>
+                </block>
+              </value>
+              <value name="ADD2">
+                <block type="text" id="HF8;g6N([nDxu(Y#2x(u">
+                  <field name="TEXT">)</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <next>
+            <block type="createCSSRule" id="UxPDEQ]wm_dxoBx+;hLD">
+              <field name="PARENT">TRUE</field>
+              <value name="CSS_RULE">
+                <shadow type="text" id="v{Dc=uoj4gCj!;@}4.th">
+                  <field name="TEXT">#m_odnotonra</field>
+                </shadow>
+                <block type="variables_get" id="MXs!DCZ^FFzchg2-hx7N">
+                  <field name="VAR" id="-hxV@8)1^=`Mop;Q:I#D">textura_img</field>
+                </block>
+              </value>
+              <value name="CSS_RULE_CONT">
+                <shadow type="text">
+                  <field name="TEXT">background-image: url(./cloth/rogozhka/9.jpg)</field>
+                </shadow>
+                <block type="text_join" id="Yi=Aa{]f`E{+8oT(Y-p^" inline="true">
+                  <mutation items="3"/>
+                  <value name="ADD0">
+                    <block type="text" id="@H@D`E#V57n~nD9QPs5N">
+                      <field name="TEXT">background-image: url(</field>
+                    </block>
+                  </value>
+                  <value name="ADD1">
+                    <block type="text" id=":9IIQqH[dVHTRJt1W!4e">
+                      <field name="TEXT">./cloth/rogozhka/9.jpg</field>
+                    </block>
+                  </value>
+                  <value name="ADD2">
+                    <block type="text" id="0o/:^4vO)(rBoMGAT3fG">
+                      <field name="TEXT">)</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="lists_create_with" id="H-mv85_kiL]m|(.O]4:M" x="10" y="10">
+      <mutation items="6"/>
+      <value name="ADD0">
+        <block type="text" id="5JEJS3`d4)KQZM=v1Qcy">
+          <field name="TEXT">colt1</field>
+        </block>
+      </value>
+      <value name="ADD1">
+        <block type="text" id="nNd`n@nP]79tkR_:}TX(">
+          <field name="TEXT">colt2</field>
+        </block>
+      </value>
+      <value name="ADD2">
+        <block type="text" id="RNlV%flax{Zl*{ODDn=U">
+          <field name="TEXT">colt3</field>
+        </block>
+      </value>
+      <value name="ADD3">
+        <block type="text" id="SPV*Z[ix_*rP/S+h-yHK">
+          <field name="TEXT">colt4</field>
+        </block>
+      </value>
+      <value name="ADD4">
+        <block type="text" id="U!%Cng=U86tuL9m*u8(l">
+          <field name="TEXT">colt6</field>
+        </block>
+      </value>
+      <value name="ADD5">
+        <block type="text" id="1~aQ$@+^`xJ+MBakabvY">
+          <field name="TEXT">colt6</field>
+        </block>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="lists_create_with" id="tzRk+P8EPTZOn}1ENz$s" x="-210" y="70">
+      <mutation items="6"/>
+      <value name="ADD4">
+        <block type="text" id="oN*v0(`c4`?Ue!c,*!]a">
+          <field name="TEXT">colt6</field>
+        </block>
+      </value>
+      <value name="ADD5">
+        <block type="text" id="-G4^,^kD{!#QfP|E.s{m">
+          <field name="TEXT">colt6</field>
+        </block>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="getHTMLElemAttribute" id="@Ttqh%)Qv1}JF2NV-Y2L" x="-910" y="150">
+      <field name="ATTRIBUTE">id</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <shadow type="text" id="Yn9}RP6O2sRy|1=UPA}y">
+          <field name="TEXT"/>
+        </shadow>
+        <block type="text" id="_5;=--Qf#{UNx+#N]Pin">
+          <field name="TEXT">#m_odnotonra</field>
+        </block>
+      </value>
+    </block>
+  </tab>
+  <editorsettings viewport-x="1395.3333740234375" viewport-y="45.77777862548828" viewport-w="960" viewport-h="591.5" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>

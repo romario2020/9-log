@@ -1,0 +1,613 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="false" scrollx="1119.9841633471958" scrolly="505.8849027884785" scale="0.8227024747918819">
+    <block xmlns="https://developers.google.com/blockly/xml" type="initSettings" id="gpcA^DEOf2!nKXG-)Tzg" x="-1230" y="-610">
+      <field name="LOAD_COMP_ASSETS">FALSE</field>
+      <field name="FULLSCREEN">TRUE</field>
+      <field name="BKG_TRANSPARENCY">TRUE</field>
+      <field name="PRESERVE_DRAW_BUF">FALSE</field>
+      <field name="FADE_ANNOTATIONS">TRUE</field>
+    </block>
+  </tab>
+  <tab name="main" type="MainTab" active="true" scrollx="998.2924673514663" scrolly="818.2086387831882" scale="0.6091554258258183">
+    <variables xmlns="https://developers.google.com/blockly/xml">
+      <variable id="-hxV@8)1^=`Mop;Q:I#D" type="">textura_img</variable>
+    </variables>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="=B/2lJPu,goL2j7^mwWz" x="-1190" y="-1030">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <shadow type="text" id="I#:GV)|vfI|72ryNjrW/">
+          <field name="TEXT">r1_1</field>
+        </shadow>
+        <block type="text_join" id="zANfSmsD.s^bztw+*?zO" inline="true">
+          <mutation items="2"/>
+          <value name="ADD0">
+            <block type="text" id="F1EzDZ5`Ng@V`45:PdiE">
+              <field name="TEXT">1_</field>
+            </block>
+          </value>
+          <value name="ADD1">
+            <block type="text" id="OZW4-qHZHY?*_V/tec=D">
+              <field name="TEXT">1</field>
+            </block>
+          </value>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="createCSSRule" id="w^dR_IKoiFUEYI9?7ghb">
+          <field name="PARENT">TRUE</field>
+          <value name="CSS_RULE">
+            <shadow type="text" id="ETb=F%Cvhd!*MuUVbo{]">
+              <field name="TEXT">#m_odnotonra</field>
+            </shadow>
+          </value>
+          <value name="CSS_RULE_CONT">
+            <shadow type="text">
+              <field name="TEXT">background-image: url(./cloth/rogozhka/9.jpg)</field>
+            </shadow>
+            <block type="text_join" id="-[pJ;l[Yj+C#z5KRg@e#" inline="true">
+              <mutation items="3"/>
+              <value name="ADD0">
+                <block type="text" id="o!M07hmB!ZD|*6[t%nm/">
+                  <field name="TEXT">background-image: url(./cloth/rogozhka/</field>
+                </block>
+              </value>
+              <value name="ADD1">
+                <block type="text" id="5i`$;[#:T(Eb,qlhdSLf">
+                  <field name="TEXT">1</field>
+                </block>
+              </value>
+              <value name="ADD2">
+                <block type="text" id="d^(3/,Xt4Pm8d1wgD5{v">
+                  <field name="TEXT">.jpg)</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <next>
+            <block type="variables_set" id="?03[Ri%Q.n3s$#=[E50S">
+              <field name="VAR" id="-hxV@8)1^=`Mop;Q:I#D">textura_img</field>
+              <value name="VALUE">
+                <block type="text_join" id="2C{6#(t^{430ND8eGPIA" inline="true">
+                  <mutation items="3"/>
+                  <value name="ADD0">
+                    <block type="text" id="N(||_:gg5%aV`;g.|lmL">
+                      <field name="TEXT">./cloth/rogozhka/</field>
+                    </block>
+                  </value>
+                  <value name="ADD1">
+                    <block type="text" id="6?Z*m1qbi]|0EA)J.e0t">
+                      <field name="TEXT">1</field>
+                    </block>
+                  </value>
+                  <value name="ADD2">
+                    <block type="text" id="h-#i7y=k0$z/?#(zvKT:">
+                      <field name="TEXT">.jpg</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+            </block>
+          </next>
+        </block>
+      </statement>
+      <next>
+        <block type="eventHTMLElem" id="/~!V!uJh.y7Uh:={PuyI">
+          <field name="EVENT">click</field>
+          <field name="PARENT">TRUE</field>
+          <value name="ID">
+            <shadow type="text" id=":3(dxwSM2S-ZP4N[;/[W">
+              <field name="TEXT">r1_1</field>
+            </shadow>
+            <block type="text_join" id="~pCPXfQ,|MdwXr6osd0O" inline="true">
+              <mutation items="2"/>
+              <value name="ADD0">
+                <block type="text" id="P+z?QXp?$zUOF*v^f;KX">
+                  <field name="TEXT">1_</field>
+                </block>
+              </value>
+              <value name="ADD1">
+                <block type="text" id="80[:2K*;V}OGb|[1l5e9">
+                  <field name="TEXT">2</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <statement name="DO">
+            <block type="createCSSRule" id="DIN*tfnv%d7rqDsBG4;o">
+              <field name="PARENT">TRUE</field>
+              <value name="CSS_RULE">
+                <shadow type="text" id="2-xtl8Sb[XqI4mYSjB9m">
+                  <field name="TEXT">#m_odnotonra</field>
+                </shadow>
+              </value>
+              <value name="CSS_RULE_CONT">
+                <shadow type="text" id="l,`=U(^;F,P]QH~DJHv]">
+                  <field name="TEXT">background-image: url(./cloth/rogozhka/9.jpg)</field>
+                </shadow>
+                <block type="text_join" id="M@WTaJTjBX+Qxr[Pok`K" inline="true">
+                  <mutation items="3"/>
+                  <value name="ADD0">
+                    <block type="text" id="WR`#+C[zhyq4i,=duB%#">
+                      <field name="TEXT">background-image: url(./cloth/rogozhka/</field>
+                    </block>
+                  </value>
+                  <value name="ADD1">
+                    <block type="text" id="?f%*/ix[j[u!rf(wlXzk">
+                      <field name="TEXT">2</field>
+                    </block>
+                  </value>
+                  <value name="ADD2">
+                    <block type="text" id="V3PWkqzy1JNYe?bNs~cf">
+                      <field name="TEXT">.jpg)</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <next>
+                <block type="variables_set" id="bz@ccW,;?3[B;lryY)Z4">
+                  <field name="VAR" id="-hxV@8)1^=`Mop;Q:I#D">textura_img</field>
+                  <value name="VALUE">
+                    <block type="text_join" id="^z?Euo(WU[m.dtbRQ|?p" inline="true">
+                      <mutation items="3"/>
+                      <value name="ADD0">
+                        <block type="text" id="8^#W5H:)Jw@p3p{72e@Q">
+                          <field name="TEXT">./cloth/rogozhka/</field>
+                        </block>
+                      </value>
+                      <value name="ADD1">
+                        <block type="text" id="GuGz;-SC3ut:vlzE^%pv">
+                          <field name="TEXT">2</field>
+                        </block>
+                      </value>
+                      <value name="ADD2">
+                        <block type="text" id="HxnhiNL(4AY6PnoU@]-7">
+                          <field name="TEXT">.jpg</field>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </statement>
+          <next>
+            <block type="eventHTMLElem" id=",E?b5``R:qVocJfV~cZ!">
+              <field name="EVENT">click</field>
+              <field name="PARENT">TRUE</field>
+              <value name="ID">
+                <shadow type="text" id="[~CZ~}/Kt/:20CDxp.0M">
+                  <field name="TEXT">r1_1</field>
+                </shadow>
+                <block type="text_join" id="`E8(?c+=E/$Q_dIVKsK6" inline="true">
+                  <mutation items="2"/>
+                  <value name="ADD0">
+                    <block type="text" id="n#$h|5=t|XIm3}j/i)P8">
+                      <field name="TEXT">1_</field>
+                    </block>
+                  </value>
+                  <value name="ADD1">
+                    <block type="text" id="bF`,bQFsQgTEHhjfd58h">
+                      <field name="TEXT">3</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <statement name="DO">
+                <block type="createCSSRule" id="2=QK6zVk8#f8-1s{Aq{O">
+                  <field name="PARENT">TRUE</field>
+                  <value name="CSS_RULE">
+                    <shadow type="text" id="ZqUS77kJ)Y~.hOWuHf:$">
+                      <field name="TEXT">#m_odnotonra</field>
+                    </shadow>
+                  </value>
+                  <value name="CSS_RULE_CONT">
+                    <shadow type="text">
+                      <field name="TEXT">background-image: url(./cloth/rogozhka/9.jpg)</field>
+                    </shadow>
+                    <block type="text_join" id="I{[e2$Fl:!Fh-#[{g,6*" inline="true">
+                      <mutation items="3"/>
+                      <value name="ADD0">
+                        <block type="text" id=";CH6d/NMbaq7x{WeDX1=">
+                          <field name="TEXT">background-image: url(./cloth/rogozhka/</field>
+                        </block>
+                      </value>
+                      <value name="ADD1">
+                        <block type="text" id="gf%;ef@|F=_n}ECQ6V1{">
+                          <field name="TEXT">3</field>
+                        </block>
+                      </value>
+                      <value name="ADD2">
+                        <block type="text" id="5{*WppP$Kj`*mQh[!)C+">
+                          <field name="TEXT">.jpg)</field>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="variables_set" id="uExJ`ymdW-~8eQ~Q=urb">
+                      <field name="VAR" id="-hxV@8)1^=`Mop;Q:I#D">textura_img</field>
+                      <value name="VALUE">
+                        <block type="text_join" id=".(){T%Z]S~hPpvSRI1gS" inline="true">
+                          <mutation items="3"/>
+                          <value name="ADD0">
+                            <block type="text" id="BM8DTA0|}*U@,J-=PvO.">
+                              <field name="TEXT">./cloth/rogozhka/</field>
+                            </block>
+                          </value>
+                          <value name="ADD1">
+                            <block type="text" id="rsyk@(*8o:8seF3DVuo@">
+                              <field name="TEXT">3</field>
+                            </block>
+                          </value>
+                          <value name="ADD2">
+                            <block type="text" id="k/^NOOXZOnmwe3@7pY);">
+                              <field name="TEXT">.jpg</field>
+                            </block>
+                          </value>
+                        </block>
+                      </value>
+                    </block>
+                  </next>
+                </block>
+              </statement>
+              <next>
+                <block type="eventHTMLElem" id="}CT-@x-Mv#bdv+V,2@i-">
+                  <field name="EVENT">click</field>
+                  <field name="PARENT">TRUE</field>
+                  <value name="ID">
+                    <shadow type="text" id="zMTw^(+AON84umSX(i-y">
+                      <field name="TEXT">r1_1</field>
+                    </shadow>
+                    <block type="text_join" id="~/zaQJ|nW3tp*`DqL1yW" inline="true">
+                      <mutation items="2"/>
+                      <value name="ADD0">
+                        <block type="text" id="Av6VG?(ek,2[jz%x)E.s">
+                          <field name="TEXT">1_</field>
+                        </block>
+                      </value>
+                      <value name="ADD1">
+                        <block type="text" id="hED2J~G=k|02c?rz)}#b">
+                          <field name="TEXT">4</field>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                  <statement name="DO">
+                    <block type="createCSSRule" id=")=$5aZHJf!9I:]mAwzz+">
+                      <field name="PARENT">TRUE</field>
+                      <value name="CSS_RULE">
+                        <shadow type="text" id="NIg:e6w-@te`-hn4iWj|">
+                          <field name="TEXT">#m_odnotonra</field>
+                        </shadow>
+                      </value>
+                      <value name="CSS_RULE_CONT">
+                        <shadow type="text">
+                          <field name="TEXT">background-image: url(./cloth/rogozhka/9.jpg)</field>
+                        </shadow>
+                        <block type="text_join" id="O_*;ga`p@w8Qj}{Gk4KP" inline="true">
+                          <mutation items="3"/>
+                          <value name="ADD0">
+                            <block type="text" id="vXC:.$B(KfUHB0FRj.P3">
+                              <field name="TEXT">background-image: url(./cloth/rogozhka/</field>
+                            </block>
+                          </value>
+                          <value name="ADD1">
+                            <block type="text" id="8Om*:*(hw9JXr`RS_8mR">
+                              <field name="TEXT">4</field>
+                            </block>
+                          </value>
+                          <value name="ADD2">
+                            <block type="text" id="]r,U3}?dI?{jJ;YHgoWy">
+                              <field name="TEXT">.jpg)</field>
+                            </block>
+                          </value>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="variables_set" id="Z6To!XI%)uCpd-KzdaP~">
+                          <field name="VAR" id="-hxV@8)1^=`Mop;Q:I#D">textura_img</field>
+                          <value name="VALUE">
+                            <block type="text_join" id="C]0GQHa?%MM[p[;pCRwV" inline="true">
+                              <mutation items="3"/>
+                              <value name="ADD0">
+                                <block type="text" id="(qxXj{;|%-B%;3eKlUf.">
+                                  <field name="TEXT">./cloth/rogozhka/</field>
+                                </block>
+                              </value>
+                              <value name="ADD1">
+                                <block type="text" id="OH,CN-3Zl^C/hG6x$q_g">
+                                  <field name="TEXT">4</field>
+                                </block>
+                              </value>
+                              <value name="ADD2">
+                                <block type="text" id="FMlYAj(O160ToL~=!HOQ">
+                                  <field name="TEXT">.jpg</field>
+                                </block>
+                              </value>
+                            </block>
+                          </value>
+                        </block>
+                      </next>
+                    </block>
+                  </statement>
+                  <next>
+                    <block type="whenHovered" id="IZV_LTsP@VgZS^kkR[K:">
+                      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false"></mutation>
+                      <field name="X_RAY">FALSE</field>
+                      <value name="VALUE">
+                        <shadow type="objectList" id="$4j*z59g+;ymT9HZP!+S">
+                          <field name="FIELDNAME">&lt;none&gt;</field>
+                        </shadow>
+                        <block type="objectList" id="{V8qMa/1tI/a~$oB=#kO">
+                          <field name="FIELDNAME">osnova</field>
+                        </block>
+                      </value>
+                      <statement name="DO_OVER">
+                        <block type="outline" id="Muad:3gn[5IhmN1Wfm7p">
+                          <field name="DO_WHAT">ENABLE</field>
+                          <value name="TARGET">
+                            <shadow type="objectList" id="H)g%J#oBn$EMEx5,jPSF">
+                              <field name="FIELDNAME">&lt;none&gt;</field>
+                            </shadow>
+                            <block type="objectList" id=".A$7rrZW^TWmM87[{sM/">
+                              <field name="FIELDNAME">osnova</field>
+                            </block>
+                          </value>
+                          <next>
+                            <block type="whenClicked" id="[.*t03rK$u=!sM[d4%kC">
+                              <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+                              <field name="X_RAY">FALSE</field>
+                              <field name="DOUBLE_CLICK">FALSE</field>
+                              <field name="LEFT_BUTTON">TRUE</field>
+                              <field name="MIDDLE_BUTTON">TRUE</field>
+                              <field name="RIGHT_BUTTON">TRUE</field>
+                              <value name="VALUE">
+                                <shadow type="objectList" id="}J)7DexaPbTST0uqaL^n">
+                                  <field name="FIELDNAME">osnova</field>
+                                </shadow>
+                              </value>
+                              <statement name="DO">
+                                <block type="outline" id="kxvyCR7A:vWpW]PG8cF0">
+                                  <field name="DO_WHAT">ENABLE</field>
+                                  <value name="TARGET">
+                                    <shadow type="objectList">
+                                      <field name="FIELDNAME">&lt;none&gt;</field>
+                                    </shadow>
+                                    <block type="objectList" id="?P#N~MAwqYnE}GCO^zJ1">
+                                      <field name="FIELDNAME">osnova</field>
+                                    </block>
+                                  </value>
+                                  <next>
+                                    <block type="replaceTexture" id="5EQoR+:udK}.?J}Fa=p=">
+                                      <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false"></mutation>
+                                      <field name="OLD_TEX_NAME">1_0-specular.png</field>
+                                      <value name="MATERIAL">
+                                        <shadow type="materialList">
+                                          <field name="FIELDNAME">&lt;none&gt;</field>
+                                        </shadow>
+                                        <block type="materialList" id="I!l;uweuQsVJMW5a?!9t">
+                                          <field name="FIELDNAME">osnova_main</field>
+                                        </block>
+                                      </value>
+                                      <value name="NEW_TEX_URL">
+                                        <shadow type="text" id="4uq+[xv9gO;RXCx=to17">
+                                          <field name="TEXT">./cloth/rogozhka/9.jpg</field>
+                                        </shadow>
+                                        <block type="variables_get" id="Ga=dgPIisI/U0irV}S:Z">
+                                          <field name="VAR" id="-hxV@8)1^=`Mop;Q:I#D">textura_img</field>
+                                        </block>
+                                      </value>
+                                    </block>
+                                  </next>
+                                </block>
+                              </statement>
+                            </block>
+                          </next>
+                        </block>
+                      </statement>
+                      <statement name="DO_OUT">
+                        <block type="outline" id="fZN01OL:ZS`2G%}wOp-Y">
+                          <field name="DO_WHAT">DISABLE</field>
+                          <value name="TARGET">
+                            <shadow type="objectList">
+                              <field name="FIELDNAME">&lt;none&gt;</field>
+                            </shadow>
+                            <block type="objectList" id="vNNoN.(ac;ZoY}=U6QIx">
+                              <field name="FIELDNAME">osnova</field>
+                            </block>
+                          </value>
+                        </block>
+                      </statement>
+                      <next>
+                        <block type="whenHovered" id="`=.|aIWdb?rg)KD2X-Z=">
+                          <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false"></mutation>
+                          <field name="X_RAY">FALSE</field>
+                          <value name="VALUE">
+                            <shadow type="objectList">
+                              <field name="FIELDNAME">&lt;none&gt;</field>
+                            </shadow>
+                            <block type="objectList" id="lg$zC4t*mB+?0psiE[tP">
+                              <field name="FIELDNAME">poduski</field>
+                            </block>
+                          </value>
+                          <statement name="DO_OVER">
+                            <block type="outline" id="p],~f%}q{(Xfp?L*TmS#">
+                              <field name="DO_WHAT">ENABLE</field>
+                              <value name="TARGET">
+                                <shadow type="objectList">
+                                  <field name="FIELDNAME">&lt;none&gt;</field>
+                                </shadow>
+                                <block type="objectList" id="$+9j2g1Zt_I;Gah[ghfQ">
+                                  <field name="FIELDNAME">poduski</field>
+                                </block>
+                              </value>
+                              <next>
+                                <block type="whenClicked" id="bW?ofaj1/.D/$k1zh{hk">
+                                  <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+                                  <field name="X_RAY">FALSE</field>
+                                  <field name="DOUBLE_CLICK">FALSE</field>
+                                  <field name="LEFT_BUTTON">TRUE</field>
+                                  <field name="MIDDLE_BUTTON">TRUE</field>
+                                  <field name="RIGHT_BUTTON">TRUE</field>
+                                  <value name="VALUE">
+                                    <shadow type="objectList" id="z%?*Hi62O4+6Zi#s)w6s">
+                                      <field name="FIELDNAME">poduski</field>
+                                    </shadow>
+                                  </value>
+                                  <statement name="DO">
+                                    <block type="outline" id="]Y0ulq6lUg4XL`(itFa)">
+                                      <field name="DO_WHAT">ENABLE</field>
+                                      <value name="TARGET">
+                                        <shadow type="objectList">
+                                          <field name="FIELDNAME">&lt;none&gt;</field>
+                                        </shadow>
+                                        <block type="objectList" id="3hTPJ3caXGfG,@qsBgp1">
+                                          <field name="FIELDNAME">poduski</field>
+                                        </block>
+                                      </value>
+                                      <next>
+                                        <block type="replaceTexture" id="1i))c8n2}0GUOCbnx5:_">
+                                          <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false"></mutation>
+                                          <field name="OLD_TEX_NAME">1_2.jpg</field>
+                                          <value name="MATERIAL">
+                                            <shadow type="materialList">
+                                              <field name="FIELDNAME">&lt;none&gt;</field>
+                                            </shadow>
+                                            <block type="materialList" id="3[!rT$,We@|14|wAs59^">
+                                              <field name="FIELDNAME">posushki_small</field>
+                                            </block>
+                                          </value>
+                                          <value name="NEW_TEX_URL">
+                                            <shadow type="text">
+                                              <field name="TEXT">./cloth/rogozhka/9.jpg</field>
+                                            </shadow>
+                                            <block type="variables_get" id="23-7Z`eQ~vb/i~X,RNe]">
+                                              <field name="VAR" id="-hxV@8)1^=`Mop;Q:I#D">textura_img</field>
+                                            </block>
+                                          </value>
+                                        </block>
+                                      </next>
+                                    </block>
+                                  </statement>
+                                </block>
+                              </next>
+                            </block>
+                          </statement>
+                          <statement name="DO_OUT">
+                            <block type="outline" id="K^k*LN]goxSvL;6GhP}5">
+                              <field name="DO_WHAT">DISABLE</field>
+                              <value name="TARGET">
+                                <shadow type="objectList">
+                                  <field name="FIELDNAME">&lt;none&gt;</field>
+                                </shadow>
+                                <block type="objectList" id="!7~YY6xl)D[V0@-8^Z)J">
+                                  <field name="FIELDNAME">poduski</field>
+                                </block>
+                              </value>
+                            </block>
+                          </statement>
+                          <next>
+                            <block type="whenHovered" id="zhOHTJ/b^H4VnIY1!(Tg">
+                              <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false"></mutation>
+                              <field name="X_RAY">FALSE</field>
+                              <value name="VALUE">
+                                <shadow type="objectList">
+                                  <field name="FIELDNAME">&lt;none&gt;</field>
+                                </shadow>
+                                <block type="objectList" id="2+J^;]Q^J3*,NA-Vpv_(">
+                                  <field name="FIELDNAME">karkas</field>
+                                </block>
+                              </value>
+                              <statement name="DO_OVER">
+                                <block type="outline" id="=z*|k#cIYQ(Ag$)$en-E">
+                                  <field name="DO_WHAT">ENABLE</field>
+                                  <value name="TARGET">
+                                    <shadow type="objectList">
+                                      <field name="FIELDNAME">&lt;none&gt;</field>
+                                    </shadow>
+                                    <block type="objectList" id="~%;L$E^gW;bpo!4;_U8s">
+                                      <field name="FIELDNAME">karkas</field>
+                                    </block>
+                                  </value>
+                                  <next>
+                                    <block type="whenClicked" id="Q(%lQ^Bq,fD8Jaa2OX!:">
+                                      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+                                      <field name="X_RAY">FALSE</field>
+                                      <field name="DOUBLE_CLICK">FALSE</field>
+                                      <field name="LEFT_BUTTON">TRUE</field>
+                                      <field name="MIDDLE_BUTTON">TRUE</field>
+                                      <field name="RIGHT_BUTTON">TRUE</field>
+                                      <value name="VALUE">
+                                        <shadow type="objectList" id=";p.AmNY0~]9]~uPDl)xW">
+                                          <field name="FIELDNAME">karkas</field>
+                                        </shadow>
+                                      </value>
+                                      <statement name="DO">
+                                        <block type="outline" id="?+!~6ITSweOfaw8:gLWT">
+                                          <field name="DO_WHAT">ENABLE</field>
+                                          <value name="TARGET">
+                                            <shadow type="objectList">
+                                              <field name="FIELDNAME">&lt;none&gt;</field>
+                                            </shadow>
+                                            <block type="objectList" id="oVcWV8q}?ug(P~[kHiK@">
+                                              <field name="FIELDNAME">karkas</field>
+                                            </block>
+                                          </value>
+                                          <next>
+                                            <block type="replaceTexture" id="]w]$-zTS5^6@3/!Cy/gE">
+                                              <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false"></mutation>
+                                              <field name="OLD_TEX_NAME">КОР_1-texture_001.jpg</field>
+                                              <value name="MATERIAL">
+                                                <shadow type="materialList">
+                                                  <field name="FIELDNAME">&lt;none&gt;</field>
+                                                </shadow>
+                                                <block type="materialList" id="`oW7bvkB9@EfFHl9NrXB">
+                                                  <field name="FIELDNAME">karkas</field>
+                                                </block>
+                                              </value>
+                                              <value name="NEW_TEX_URL">
+                                                <shadow type="text">
+                                                  <field name="TEXT">./cloth/rogozhka/9.jpg</field>
+                                                </shadow>
+                                                <block type="variables_get" id="L)ck,]u0Onf$#h!l)sx.">
+                                                  <field name="VAR" id="-hxV@8)1^=`Mop;Q:I#D">textura_img</field>
+                                                </block>
+                                              </value>
+                                            </block>
+                                          </next>
+                                        </block>
+                                      </statement>
+                                    </block>
+                                  </next>
+                                </block>
+                              </statement>
+                              <statement name="DO_OUT">
+                                <block type="outline" id="b;^c]A5aQ[y4w*zsEJ=h">
+                                  <field name="DO_WHAT">DISABLE</field>
+                                  <value name="TARGET">
+                                    <shadow type="objectList">
+                                      <field name="FIELDNAME">&lt;none&gt;</field>
+                                    </shadow>
+                                    <block type="objectList" id="eWvzuFl|N{{UQGJwTdld">
+                                      <field name="FIELDNAME">karkas</field>
+                                    </block>
+                                  </value>
+                                </block>
+                              </statement>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+  </tab>
+  <editorsettings viewport-x="1480.888916015625" viewport-y="570.2222557067871" viewport-w="960" viewport-h="591.5" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>

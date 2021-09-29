@@ -1,0 +1,857 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="false" scrollx="1119.9841633471967" scrolly="505.8849027884776" scale="0.8227024747918819">
+    <block xmlns="https://developers.google.com/blockly/xml" type="initSettings" id="gpcA^DEOf2!nKXG-)Tzg" x="-1230" y="-610">
+      <field name="LOAD_COMP_ASSETS">FALSE</field>
+      <field name="FULLSCREEN">TRUE</field>
+      <field name="BKG_TRANSPARENCY">TRUE</field>
+      <field name="PRESERVE_DRAW_BUF">TRUE</field>
+      <field name="FADE_ANNOTATIONS">TRUE</field>
+    </block>
+  </tab>
+  <tab name="main" type="MainTab" active="true" scrollx="1409.8832244057458" scrolly="1761.8677394831748" scale="0.6139132535407587">
+    <variables xmlns="https://developers.google.com/blockly/xml">
+      <variable id="-hxV@8)1^=`Mop;Q:I#D" type="">textura_img</variable>
+      <variable id="?rdEqG_!+JjSKO#36H/A" type="">textura_img_ind</variable>
+    </variables>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="C`:*1l:tO:8Jug]Rt_8_" x="-2135" y="-2759">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <shadow type="text">
+          <field name="TEXT"/>
+        </shadow>
+        <block type="text" id="o+80yrjonzx^MqE4WJ%w">
+          <field name="TEXT">m_lokotiny</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="downloadFile" id="iU;xvh9dO~Yp:ymF0E|Q">
+          <value name="CONTENTS">
+            <shadow type="text" id="+gb~QT+5ZtnAv|%?k}rY">
+              <field name="TEXT">data:,</field>
+            </shadow>
+            <block type="takeScreenshot" id="dQDxYtfHz]XiJ17ZKWoY">
+              <field name="TYPE">png</field>
+            </block>
+          </value>
+          <value name="FILENAME">
+            <shadow type="text" id="+CG#7g/pW^zq*7/xXVN-">
+              <field name="TEXT">screen.jpg</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+      <next>
+        <block type="eventHTMLElem" id="^bwV^4i$+oHO4}Cv6cQs">
+          <field name="EVENT">click</field>
+          <field name="PARENT">TRUE</field>
+          <value name="ID">
+            <shadow type="text" id="sDdnj6,OdV_;g4([``L)">
+              <field name="TEXT"/>
+            </shadow>
+            <block type="text" id="5pN6d^XqfAwG5(4vn)~#">
+              <field name="TEXT">m_osnova</field>
+            </block>
+          </value>
+          <statement name="DO">
+            <block type="hide" id="xVL3+2!x1!N@[yW}B3:l">
+              <value name="VALUE">
+                <shadow type="objectList" id="ZJ}EwrW$NJrDG[%mJMbr">
+                  <field name="FIELDNAME">&lt;none&gt;</field>
+                </shadow>
+                <block type="objectList" id="Cn[U,/kbDN%A[iNZI7}V">
+                  <field name="FIELDNAME">flo</field>
+                </block>
+              </value>
+              <next>
+                <block type="hide" id=".bnXV(bZP;0NbyEg`U#7">
+                  <value name="VALUE">
+                    <shadow type="objectList">
+                      <field name="FIELDNAME">&lt;none&gt;</field>
+                    </shadow>
+                    <block type="objectList" id="Pe1vFx+v0WGy%%epyn,9">
+                      <field name="FIELDNAME">Plane</field>
+                    </block>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </statement>
+          <next>
+            <block type="eventHTMLElem" id="ty2hl3i9^z3!ZqAhQ6[9">
+              <field name="EVENT">dblclick</field>
+              <field name="PARENT">TRUE</field>
+              <value name="ID">
+                <shadow type="text">
+                  <field name="TEXT"/>
+                </shadow>
+                <block type="text" id="*K9)6yxVEBJy!/~bHA24">
+                  <field name="TEXT">m_osnova</field>
+                </block>
+              </value>
+              <statement name="DO">
+                <block type="show" id="vB;6{=ODp_yv.k0rtpu;">
+                  <value name="VALUE">
+                    <shadow type="objectList" id="i_9_VIA4T=8yK/OycnlV">
+                      <field name="FIELDNAME">&lt;none&gt;</field>
+                    </shadow>
+                    <block type="objectList" id="mWTUsKF}BCpPbISk@Z.@">
+                      <field name="FIELDNAME">flo</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="show" id="elXPDxk0f[e]P6lmY,{,">
+                      <value name="VALUE">
+                        <shadow type="objectList">
+                          <field name="FIELDNAME">&lt;none&gt;</field>
+                        </shadow>
+                        <block type="objectList" id="HY?e_jUqKl.,)$NRtF)(">
+                          <field name="FIELDNAME">Plane</field>
+                        </block>
+                      </value>
+                    </block>
+                  </next>
+                </block>
+              </statement>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="=8?3J@*SI,2:t+,O0%vt" x="-1550" y="-2770">
+      <field name="EVENT">change</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <shadow type="text">
+          <field name="TEXT"/>
+        </shadow>
+        <block type="text" id="Qm;EDqcqr24#bNA7e/}c">
+          <field name="TEXT">r1</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="setMaterialValue" id="4U5l!BjZTAPQql5QzhCr">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" flexvalinput="false"></mutation>
+          <field name="MAT_VAL_NAME">Value</field>
+          <value name="MATERIAL">
+            <shadow type="materialList" id="Y9vd)azNkPmU.PA|5qdw">
+              <field name="FIELDNAME">karkas</field>
+            </shadow>
+          </value>
+          <value name="VALUE">
+            <shadow type="math_number">
+              <field name="NUM">0.5</field>
+            </shadow>
+            <block type="getHTMLElemAttribute" id="yw6]I)bRB!9*OGcxwi3G">
+              <field name="ATTRIBUTE">value</field>
+              <field name="PARENT">TRUE</field>
+              <value name="ID">
+                <shadow type="text">
+                  <field name="TEXT"/>
+                </shadow>
+                <block type="text" id="K8+KHFEnoziBRZ]ru6Lu">
+                  <field name="TEXT">r1</field>
+                </block>
+              </value>
+            </block>
+          </value>
+        </block>
+      </statement>
+      <next>
+        <block type="eventHTMLElem" id="W)H}?=Sx:MBPz|AXpOT9">
+          <field name="EVENT">change</field>
+          <field name="PARENT">TRUE</field>
+          <value name="ID">
+            <shadow type="text" id="J9i|*5hrC_JvLEY+z4un">
+              <field name="TEXT"/>
+            </shadow>
+            <block type="text" id="dSS6Eh61*[cXmk|ief}z">
+              <field name="TEXT">r2</field>
+            </block>
+          </value>
+          <statement name="DO">
+            <block type="setMaterialValue" id="p~D,#`YQ9J#TbeNT_WT5">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" flexvalinput="false"></mutation>
+              <field name="MAT_VAL_NAME">Value</field>
+              <value name="MATERIAL">
+                <shadow type="materialList" id="UpOoAPN_F:W,]?GRkDUW">
+                  <field name="FIELDNAME">osnova_main</field>
+                </shadow>
+              </value>
+              <value name="VALUE">
+                <shadow type="math_number" id="(u-|qg3n~i(@)T8EO?aM">
+                  <field name="NUM">0.5</field>
+                </shadow>
+                <block type="getHTMLElemAttribute" id="JlIAheD-sU`?bscr}JNb">
+                  <field name="ATTRIBUTE">value</field>
+                  <field name="PARENT">TRUE</field>
+                  <value name="ID">
+                    <shadow type="text" id="mTrTT4;Z3+gd/LEe]SN%">
+                      <field name="TEXT"/>
+                    </shadow>
+                    <block type="text" id="V9Fk}JWxx?9uMW{9W#wH">
+                      <field name="TEXT">r2</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+            </block>
+          </statement>
+          <next>
+            <block type="eventHTMLElem" id="Ek1.YvT-kw.^cLo_IPCm">
+              <field name="EVENT">change</field>
+              <field name="PARENT">TRUE</field>
+              <value name="ID">
+                <shadow type="text">
+                  <field name="TEXT"/>
+                </shadow>
+                <block type="text" id="n9PVJQY#%HT17(~!T#(@">
+                  <field name="TEXT">r3</field>
+                </block>
+              </value>
+              <statement name="DO">
+                <block type="setMaterialValue" id="y@H[](kGrsSoVl60;+8U">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" flexvalinput="false"></mutation>
+                  <field name="MAT_VAL_NAME">Value</field>
+                  <value name="MATERIAL">
+                    <shadow type="materialList" id="$Lau3NJTlSzX@%J!]Ci%">
+                      <field name="FIELDNAME">posushki_small</field>
+                    </shadow>
+                  </value>
+                  <value name="VALUE">
+                    <shadow type="math_number">
+                      <field name="NUM">0.5</field>
+                    </shadow>
+                    <block type="getHTMLElemAttribute" id="0rOvWSY8Npw5dHTm%oTJ">
+                      <field name="ATTRIBUTE">value</field>
+                      <field name="PARENT">TRUE</field>
+                      <value name="ID">
+                        <shadow type="text">
+                          <field name="TEXT"/>
+                        </shadow>
+                        <block type="text" id="6c+XwaQ{A{D(BY/]MUwW">
+                          <field name="TEXT">r3</field>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                </block>
+              </statement>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="whenHovered" id="IZV_LTsP@VgZS^kkR[K:" x="-470" y="-2750">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false"></mutation>
+      <field name="X_RAY">FALSE</field>
+      <value name="VALUE">
+        <shadow type="objectList" id="$4j*z59g+;ymT9HZP!+S">
+          <field name="FIELDNAME">&lt;none&gt;</field>
+        </shadow>
+        <block type="objectList" id="{V8qMa/1tI/a~$oB=#kO">
+          <field name="FIELDNAME">osnova</field>
+        </block>
+      </value>
+      <statement name="DO_OVER">
+        <block type="outline" id="Muad:3gn[5IhmN1Wfm7p">
+          <field name="DO_WHAT">ENABLE</field>
+          <value name="TARGET">
+            <shadow type="objectList" id="H)g%J#oBn$EMEx5,jPSF">
+              <field name="FIELDNAME">&lt;none&gt;</field>
+            </shadow>
+            <block type="objectList" id=".A$7rrZW^TWmM87[{sM/">
+              <field name="FIELDNAME">osnova</field>
+            </block>
+          </value>
+          <next>
+            <block type="variables_set" id="g3d1-]GNWzD}t79Y!GjS">
+              <field name="VAR" id="-hxV@8)1^=`Mop;Q:I#D">textura_img</field>
+              <value name="VALUE">
+                <block type="getHTMLElemAttribute" id="G5#t)pw33uH,{hAY~T-]">
+                  <field name="ATTRIBUTE">src</field>
+                  <field name="PARENT">TRUE</field>
+                  <value name="ID">
+                    <shadow type="text" id="[Gv_!:M|3~iI;?,pvxa]">
+                      <field name="TEXT">m_odnotonra</field>
+                    </shadow>
+                  </value>
+                </block>
+              </value>
+              <next>
+                <block type="whenClicked" id="[.*t03rK$u=!sM[d4%kC">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+                  <field name="X_RAY">FALSE</field>
+                  <field name="DOUBLE_CLICK">FALSE</field>
+                  <field name="LEFT_BUTTON">TRUE</field>
+                  <field name="MIDDLE_BUTTON">TRUE</field>
+                  <field name="RIGHT_BUTTON">TRUE</field>
+                  <value name="VALUE">
+                    <shadow type="objectList" id="}J)7DexaPbTST0uqaL^n">
+                      <field name="FIELDNAME">osnova</field>
+                    </shadow>
+                  </value>
+                  <statement name="DO">
+                    <block type="outline" id="kxvyCR7A:vWpW]PG8cF0">
+                      <field name="DO_WHAT">ENABLE</field>
+                      <value name="TARGET">
+                        <shadow type="objectList">
+                          <field name="FIELDNAME">&lt;none&gt;</field>
+                        </shadow>
+                        <block type="objectList" id="?P#N~MAwqYnE}GCO^zJ1">
+                          <field name="FIELDNAME">osnova</field>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="replaceTexture" id="5EQoR+:udK}.?J}Fa=p=">
+                          <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false"></mutation>
+                          <field name="OLD_TEX_NAME">1_0-specular.png</field>
+                          <value name="MATERIAL">
+                            <shadow type="materialList">
+                              <field name="FIELDNAME">&lt;none&gt;</field>
+                            </shadow>
+                            <block type="materialList" id="I!l;uweuQsVJMW5a?!9t">
+                              <field name="FIELDNAME">osnova_main</field>
+                            </block>
+                          </value>
+                          <value name="NEW_TEX_URL">
+                            <shadow type="text" id="4uq+[xv9gO;RXCx=to17">
+                              <field name="TEXT">./cloth/rogozhka/9.jpg</field>
+                            </shadow>
+                            <block type="variables_get" id="Ga=dgPIisI/U0irV}S:Z">
+                              <field name="VAR" id="-hxV@8)1^=`Mop;Q:I#D">textura_img</field>
+                            </block>
+                          </value>
+                        </block>
+                      </next>
+                    </block>
+                  </statement>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+      <statement name="DO_OUT">
+        <block type="outline" id="fZN01OL:ZS`2G%}wOp-Y">
+          <field name="DO_WHAT">DISABLE</field>
+          <value name="TARGET">
+            <shadow type="objectList">
+              <field name="FIELDNAME">&lt;none&gt;</field>
+            </shadow>
+            <block type="objectList" id="vNNoN.(ac;ZoY}=U6QIx">
+              <field name="FIELDNAME">osnova</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+      <next>
+        <block type="whenHovered" id="`=.|aIWdb?rg)KD2X-Z=">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false"></mutation>
+          <field name="X_RAY">FALSE</field>
+          <value name="VALUE">
+            <shadow type="objectList">
+              <field name="FIELDNAME">&lt;none&gt;</field>
+            </shadow>
+            <block type="objectList" id="lg$zC4t*mB+?0psiE[tP">
+              <field name="FIELDNAME">poduski</field>
+            </block>
+          </value>
+          <statement name="DO_OVER">
+            <block type="outline" id="p],~f%}q{(Xfp?L*TmS#">
+              <field name="DO_WHAT">ENABLE</field>
+              <value name="TARGET">
+                <shadow type="objectList">
+                  <field name="FIELDNAME">&lt;none&gt;</field>
+                </shadow>
+                <block type="objectList" id="$+9j2g1Zt_I;Gah[ghfQ">
+                  <field name="FIELDNAME">poduski</field>
+                </block>
+              </value>
+              <next>
+                <block type="variables_set" id="p-|Wem^s0j}cS+lq+*9A">
+                  <field name="VAR" id="-hxV@8)1^=`Mop;Q:I#D">textura_img</field>
+                  <value name="VALUE">
+                    <block type="getHTMLElemAttribute" id="Az7k]2f63^KJIzbT?RvF">
+                      <field name="ATTRIBUTE">src</field>
+                      <field name="PARENT">TRUE</field>
+                      <value name="ID">
+                        <shadow type="text" id="!22N[x@?9Cf5QghJgHey">
+                          <field name="TEXT">m_odnotonra</field>
+                        </shadow>
+                      </value>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="whenClicked" id="bW?ofaj1/.D/$k1zh{hk">
+                      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+                      <field name="X_RAY">FALSE</field>
+                      <field name="DOUBLE_CLICK">FALSE</field>
+                      <field name="LEFT_BUTTON">TRUE</field>
+                      <field name="MIDDLE_BUTTON">TRUE</field>
+                      <field name="RIGHT_BUTTON">TRUE</field>
+                      <value name="VALUE">
+                        <shadow type="objectList" id="z%?*Hi62O4+6Zi#s)w6s">
+                          <field name="FIELDNAME">poduski</field>
+                        </shadow>
+                      </value>
+                      <statement name="DO">
+                        <block type="outline" id="]Y0ulq6lUg4XL`(itFa)">
+                          <field name="DO_WHAT">ENABLE</field>
+                          <value name="TARGET">
+                            <shadow type="objectList">
+                              <field name="FIELDNAME">&lt;none&gt;</field>
+                            </shadow>
+                            <block type="objectList" id="3hTPJ3caXGfG,@qsBgp1">
+                              <field name="FIELDNAME">poduski</field>
+                            </block>
+                          </value>
+                          <next>
+                            <block type="replaceTexture" id="1i))c8n2}0GUOCbnx5:_">
+                              <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false"></mutation>
+                              <field name="OLD_TEX_NAME">1_2.jpg</field>
+                              <value name="MATERIAL">
+                                <shadow type="materialList">
+                                  <field name="FIELDNAME">&lt;none&gt;</field>
+                                </shadow>
+                                <block type="materialList" id="3[!rT$,We@|14|wAs59^">
+                                  <field name="FIELDNAME">posushki_small</field>
+                                </block>
+                              </value>
+                              <value name="NEW_TEX_URL">
+                                <shadow type="text">
+                                  <field name="TEXT">./cloth/rogozhka/9.jpg</field>
+                                </shadow>
+                                <block type="variables_get" id="23-7Z`eQ~vb/i~X,RNe]">
+                                  <field name="VAR" id="-hxV@8)1^=`Mop;Q:I#D">textura_img</field>
+                                </block>
+                              </value>
+                            </block>
+                          </next>
+                        </block>
+                      </statement>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </statement>
+          <statement name="DO_OUT">
+            <block type="outline" id="K^k*LN]goxSvL;6GhP}5">
+              <field name="DO_WHAT">DISABLE</field>
+              <value name="TARGET">
+                <shadow type="objectList">
+                  <field name="FIELDNAME">&lt;none&gt;</field>
+                </shadow>
+                <block type="objectList" id="!7~YY6xl)D[V0@-8^Z)J">
+                  <field name="FIELDNAME">poduski</field>
+                </block>
+              </value>
+            </block>
+          </statement>
+          <next>
+            <block type="whenHovered" id="zhOHTJ/b^H4VnIY1!(Tg">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false"></mutation>
+              <field name="X_RAY">FALSE</field>
+              <value name="VALUE">
+                <shadow type="objectList">
+                  <field name="FIELDNAME">&lt;none&gt;</field>
+                </shadow>
+                <block type="objectList" id="2+J^;]Q^J3*,NA-Vpv_(">
+                  <field name="FIELDNAME">karkas</field>
+                </block>
+              </value>
+              <statement name="DO_OVER">
+                <block type="outline" id="=z*|k#cIYQ(Ag$)$en-E">
+                  <field name="DO_WHAT">ENABLE</field>
+                  <value name="TARGET">
+                    <shadow type="objectList">
+                      <field name="FIELDNAME">&lt;none&gt;</field>
+                    </shadow>
+                    <block type="objectList" id="~%;L$E^gW;bpo!4;_U8s">
+                      <field name="FIELDNAME">karkas</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="variables_set" id="v_gA7r3qD._p;4-NT9hR">
+                      <field name="VAR" id="-hxV@8)1^=`Mop;Q:I#D">textura_img</field>
+                      <value name="VALUE">
+                        <block type="getHTMLElemAttribute" id="t6ey55MRxxS{k,-9weHR">
+                          <field name="ATTRIBUTE">src</field>
+                          <field name="PARENT">TRUE</field>
+                          <value name="ID">
+                            <shadow type="text" id="6?^.oS=!P7L%G6q*i`w?">
+                              <field name="TEXT">m_odnotonra</field>
+                            </shadow>
+                          </value>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="whenClicked" id="Q(%lQ^Bq,fD8Jaa2OX!:">
+                          <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+                          <field name="X_RAY">FALSE</field>
+                          <field name="DOUBLE_CLICK">FALSE</field>
+                          <field name="LEFT_BUTTON">TRUE</field>
+                          <field name="MIDDLE_BUTTON">TRUE</field>
+                          <field name="RIGHT_BUTTON">TRUE</field>
+                          <value name="VALUE">
+                            <shadow type="objectList" id=";p.AmNY0~]9]~uPDl)xW">
+                              <field name="FIELDNAME">karkas</field>
+                            </shadow>
+                          </value>
+                          <statement name="DO">
+                            <block type="outline" id="?+!~6ITSweOfaw8:gLWT">
+                              <field name="DO_WHAT">ENABLE</field>
+                              <value name="TARGET">
+                                <shadow type="objectList">
+                                  <field name="FIELDNAME">&lt;none&gt;</field>
+                                </shadow>
+                                <block type="objectList" id="oVcWV8q}?ug(P~[kHiK@">
+                                  <field name="FIELDNAME">karkas</field>
+                                </block>
+                              </value>
+                              <next>
+                                <block type="replaceTexture" id="]w]$-zTS5^6@3/!Cy/gE">
+                                  <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false"></mutation>
+                                  <field name="OLD_TEX_NAME">1_3.jpg</field>
+                                  <value name="MATERIAL">
+                                    <shadow type="materialList">
+                                      <field name="FIELDNAME">&lt;none&gt;</field>
+                                    </shadow>
+                                    <block type="materialList" id="`oW7bvkB9@EfFHl9NrXB">
+                                      <field name="FIELDNAME">karkas</field>
+                                    </block>
+                                  </value>
+                                  <value name="NEW_TEX_URL">
+                                    <shadow type="text" id="m;v7wKI2m([XUE=rYnht">
+                                      <field name="TEXT">./cloth/rogozhka/10.jpg</field>
+                                    </shadow>
+                                    <block type="variables_get" id="L)ck,]u0Onf$#h!l)sx.">
+                                      <field name="VAR" id="-hxV@8)1^=`Mop;Q:I#D">textura_img</field>
+                                    </block>
+                                  </value>
+                                </block>
+                              </next>
+                            </block>
+                          </statement>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </statement>
+              <statement name="DO_OUT">
+                <block type="outline" id="b;^c]A5aQ[y4w*zsEJ=h">
+                  <field name="DO_WHAT">DISABLE</field>
+                  <value name="TARGET">
+                    <shadow type="objectList">
+                      <field name="FIELDNAME">&lt;none&gt;</field>
+                    </shadow>
+                    <block type="objectList" id="eWvzuFl|N{{UQGJwTdld">
+                      <field name="FIELDNAME">karkas</field>
+                    </block>
+                  </value>
+                </block>
+              </statement>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="#U{w.ca1rjd|{]O=i{nw" x="-1550" y="-2330">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <shadow type="text" id="B_H{A,@WGItb:A7~96M%">
+          <field name="TEXT">r1_1</field>
+        </shadow>
+        <block type="text" id="5{*WppP$Kj`*mQh[!)C+">
+          <field name="TEXT">m_odnoton_ind</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="openFile" id="K)wE|!?{^Wv[|%d;ja4O">
+          <statement name="DO">
+            <block type="variables_set" id="72cCZ~I:?d)|wE6wh~oG">
+              <field name="VAR" id="?rdEqG_!+JjSKO#36H/A">textura_img_ind</field>
+              <value name="VALUE">
+                <block type="openedFile" id="c)(8s3Ykf[$M^R3Y{V`1"/>
+              </value>
+            </block>
+          </statement>
+          <next>
+            <block type="whenHovered" id="Cj9p]NZ:Q031^Ewdfs99">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false"></mutation>
+              <field name="X_RAY">FALSE</field>
+              <value name="VALUE">
+                <shadow type="objectList">
+                  <field name="FIELDNAME">&lt;none&gt;</field>
+                </shadow>
+                <block type="objectList" id="~}/8k^lI@*U|Gl}!UMX#">
+                  <field name="FIELDNAME">osnova</field>
+                </block>
+              </value>
+              <statement name="DO_OVER">
+                <block type="outline" id="bf/y/`CZsGKH#i7h,+;*">
+                  <field name="DO_WHAT">ENABLE</field>
+                  <value name="TARGET">
+                    <shadow type="objectList">
+                      <field name="FIELDNAME">&lt;none&gt;</field>
+                    </shadow>
+                    <block type="objectList" id="j7*+6oad7G?%/#9qS;_/">
+                      <field name="FIELDNAME">osnova</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="whenClicked" id="FJI(5%H@#7TIgJ[@#W6S">
+                      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+                      <field name="X_RAY">FALSE</field>
+                      <field name="DOUBLE_CLICK">FALSE</field>
+                      <field name="LEFT_BUTTON">TRUE</field>
+                      <field name="MIDDLE_BUTTON">TRUE</field>
+                      <field name="RIGHT_BUTTON">TRUE</field>
+                      <value name="VALUE">
+                        <shadow type="objectList" id="FjQs,Z,,0rarnhDnfT{[">
+                          <field name="FIELDNAME">osnova</field>
+                        </shadow>
+                      </value>
+                      <statement name="DO">
+                        <block type="outline" id=".~WuL+r}~B4@r{|;kE@^">
+                          <field name="DO_WHAT">ENABLE</field>
+                          <value name="TARGET">
+                            <shadow type="objectList">
+                              <field name="FIELDNAME">&lt;none&gt;</field>
+                            </shadow>
+                            <block type="objectList" id="D*yb]_mQw7yplF!NQB?D">
+                              <field name="FIELDNAME">osnova</field>
+                            </block>
+                          </value>
+                          <next>
+                            <block type="replaceTexture" id="eIEpAK`Yu42y#jR@Z~Mu">
+                              <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false"></mutation>
+                              <field name="OLD_TEX_NAME">1_0-specular.png</field>
+                              <value name="MATERIAL">
+                                <shadow type="materialList">
+                                  <field name="FIELDNAME">&lt;none&gt;</field>
+                                </shadow>
+                                <block type="materialList" id="W;u3jw.,pM4oGrCQL!Xp">
+                                  <field name="FIELDNAME">osnova_main</field>
+                                </block>
+                              </value>
+                              <value name="NEW_TEX_URL">
+                                <shadow type="text" id="z_+ZsUCBI)}S6!9JQGFs">
+                                  <field name="TEXT">./cloth/rogozhka/9.jpg</field>
+                                </shadow>
+                                <block type="variables_get" id="8QtD,z}J8LHj81o++Gro">
+                                  <field name="VAR" id="?rdEqG_!+JjSKO#36H/A">textura_img_ind</field>
+                                </block>
+                              </value>
+                            </block>
+                          </next>
+                        </block>
+                      </statement>
+                    </block>
+                  </next>
+                </block>
+              </statement>
+              <statement name="DO_OUT">
+                <block type="outline" id="JR)gmf7(wPR?EOg]r*Yz">
+                  <field name="DO_WHAT">DISABLE</field>
+                  <value name="TARGET">
+                    <shadow type="objectList">
+                      <field name="FIELDNAME">&lt;none&gt;</field>
+                    </shadow>
+                    <block type="objectList" id="Lpjz(s.y{2cDz9^2Q0Nv">
+                      <field name="FIELDNAME">osnova</field>
+                    </block>
+                  </value>
+                </block>
+              </statement>
+              <next>
+                <block type="whenHovered" id="bCEojmS:%:6(Hot.HaQb">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false"></mutation>
+                  <field name="X_RAY">FALSE</field>
+                  <value name="VALUE">
+                    <shadow type="objectList">
+                      <field name="FIELDNAME">&lt;none&gt;</field>
+                    </shadow>
+                    <block type="objectList" id="mc7iSZ^4W4lAHYle@m45">
+                      <field name="FIELDNAME">poduski</field>
+                    </block>
+                  </value>
+                  <statement name="DO_OVER">
+                    <block type="outline" id="|pOlL@@p+!Lt$,h5ijG{">
+                      <field name="DO_WHAT">ENABLE</field>
+                      <value name="TARGET">
+                        <shadow type="objectList">
+                          <field name="FIELDNAME">&lt;none&gt;</field>
+                        </shadow>
+                        <block type="objectList" id="kH8!3-yL-e[4F8ksI6/)">
+                          <field name="FIELDNAME">poduski</field>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="whenClicked" id="ezQayxpd4-fii:nEvkS#">
+                          <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+                          <field name="X_RAY">FALSE</field>
+                          <field name="DOUBLE_CLICK">FALSE</field>
+                          <field name="LEFT_BUTTON">TRUE</field>
+                          <field name="MIDDLE_BUTTON">TRUE</field>
+                          <field name="RIGHT_BUTTON">TRUE</field>
+                          <value name="VALUE">
+                            <shadow type="objectList" id="?d#T)rgp1:21;=10oO8,">
+                              <field name="FIELDNAME">poduski</field>
+                            </shadow>
+                          </value>
+                          <statement name="DO">
+                            <block type="outline" id="F3#l/J]]ywb9VB08{6#j">
+                              <field name="DO_WHAT">ENABLE</field>
+                              <value name="TARGET">
+                                <shadow type="objectList">
+                                  <field name="FIELDNAME">&lt;none&gt;</field>
+                                </shadow>
+                                <block type="objectList" id="I_FT9?,n{#sV_C,}v-%.">
+                                  <field name="FIELDNAME">poduski</field>
+                                </block>
+                              </value>
+                              <next>
+                                <block type="replaceTexture" id="QS8LO_eMYxQ]CWmGb}!t">
+                                  <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false"></mutation>
+                                  <field name="OLD_TEX_NAME">1_2.jpg</field>
+                                  <value name="MATERIAL">
+                                    <shadow type="materialList">
+                                      <field name="FIELDNAME">&lt;none&gt;</field>
+                                    </shadow>
+                                    <block type="materialList" id="MTv:aEgAKydii{3]=UQo">
+                                      <field name="FIELDNAME">posushki_small</field>
+                                    </block>
+                                  </value>
+                                  <value name="NEW_TEX_URL">
+                                    <shadow type="text">
+                                      <field name="TEXT">./cloth/rogozhka/9.jpg</field>
+                                    </shadow>
+                                    <block type="variables_get" id=".9|zKo[#C[Ul?R@Vz7zP">
+                                      <field name="VAR" id="?rdEqG_!+JjSKO#36H/A">textura_img_ind</field>
+                                    </block>
+                                  </value>
+                                </block>
+                              </next>
+                            </block>
+                          </statement>
+                        </block>
+                      </next>
+                    </block>
+                  </statement>
+                  <statement name="DO_OUT">
+                    <block type="outline" id="O{F~3Ifq@d5McLauD@a!">
+                      <field name="DO_WHAT">DISABLE</field>
+                      <value name="TARGET">
+                        <shadow type="objectList">
+                          <field name="FIELDNAME">&lt;none&gt;</field>
+                        </shadow>
+                        <block type="objectList" id="BabLJdPGsHnoz.Ee]2Mn">
+                          <field name="FIELDNAME">poduski</field>
+                        </block>
+                      </value>
+                    </block>
+                  </statement>
+                  <next>
+                    <block type="whenHovered" id="k:bHOw};dlHasZAbuSE,">
+                      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false"></mutation>
+                      <field name="X_RAY">FALSE</field>
+                      <value name="VALUE">
+                        <shadow type="objectList">
+                          <field name="FIELDNAME">&lt;none&gt;</field>
+                        </shadow>
+                        <block type="objectList" id="Ms1xRKvm!t0nQ[znv1,X">
+                          <field name="FIELDNAME">karkas</field>
+                        </block>
+                      </value>
+                      <statement name="DO_OVER">
+                        <block type="outline" id="*j9`~YVZG;O5CGny|GF%">
+                          <field name="DO_WHAT">ENABLE</field>
+                          <value name="TARGET">
+                            <shadow type="objectList">
+                              <field name="FIELDNAME">&lt;none&gt;</field>
+                            </shadow>
+                            <block type="objectList" id="5R[|VOElzjTMIef2lL=w">
+                              <field name="FIELDNAME">karkas</field>
+                            </block>
+                          </value>
+                          <next>
+                            <block type="whenClicked" id="-`NQTuOxztz]J#w;E?3_">
+                              <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+                              <field name="X_RAY">FALSE</field>
+                              <field name="DOUBLE_CLICK">FALSE</field>
+                              <field name="LEFT_BUTTON">TRUE</field>
+                              <field name="MIDDLE_BUTTON">TRUE</field>
+                              <field name="RIGHT_BUTTON">TRUE</field>
+                              <value name="VALUE">
+                                <shadow type="objectList" id="{)5Et*kaN0:!/Hn1a;AF">
+                                  <field name="FIELDNAME">karkas</field>
+                                </shadow>
+                              </value>
+                              <statement name="DO">
+                                <block type="outline" id="aV2o]nKSja1/JLN4P6R)">
+                                  <field name="DO_WHAT">ENABLE</field>
+                                  <value name="TARGET">
+                                    <shadow type="objectList">
+                                      <field name="FIELDNAME">&lt;none&gt;</field>
+                                    </shadow>
+                                    <block type="objectList" id="b4D8KDRYPVOikdHkX!=D">
+                                      <field name="FIELDNAME">karkas</field>
+                                    </block>
+                                  </value>
+                                  <next>
+                                    <block type="replaceTexture" id="$MSFDS!]RjS}I%5jU3r}">
+                                      <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false"></mutation>
+                                      <field name="OLD_TEX_NAME">1_3.jpg</field>
+                                      <value name="MATERIAL">
+                                        <shadow type="materialList">
+                                          <field name="FIELDNAME">&lt;none&gt;</field>
+                                        </shadow>
+                                        <block type="materialList" id="C()48Pmhdc.DuUx7ktdw">
+                                          <field name="FIELDNAME">karkas</field>
+                                        </block>
+                                      </value>
+                                      <value name="NEW_TEX_URL">
+                                        <shadow type="text">
+                                          <field name="TEXT">./cloth/rogozhka/10.jpg</field>
+                                        </shadow>
+                                        <block type="variables_get" id="XHWDlmOIH@VXBQXu24=}">
+                                          <field name="VAR" id="?rdEqG_!+JjSKO#36H/A">textura_img_ind</field>
+                                        </block>
+                                      </value>
+                                    </block>
+                                  </next>
+                                </block>
+                              </statement>
+                            </block>
+                          </next>
+                        </block>
+                      </statement>
+                      <statement name="DO_OUT">
+                        <block type="outline" id="KbNY-DtvN^`fqG?uog(+">
+                          <field name="DO_WHAT">DISABLE</field>
+                          <value name="TARGET">
+                            <shadow type="objectList">
+                              <field name="FIELDNAME">&lt;none&gt;</field>
+                            </shadow>
+                            <block type="objectList" id="b%J12eY_n=g6SbtD-1{R">
+                              <field name="FIELDNAME">karkas</field>
+                            </block>
+                          </value>
+                        </block>
+                      </statement>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <editorsettings viewport-x="1270.2222900390625" viewport-y="24.7777681350708" viewport-w="645" viewport-h="411.484" viewport-hidden="true" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>

@@ -1,0 +1,121 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="false" scrollx="1119.9841633471958" scrolly="505.8849027884785" scale="0.8227024747918819">
+    <block xmlns="https://developers.google.com/blockly/xml" type="initSettings" id="gpcA^DEOf2!nKXG-)Tzg" x="-1230" y="-610">
+      <field name="LOAD_COMP_ASSETS">FALSE</field>
+      <field name="FULLSCREEN">TRUE</field>
+      <field name="BKG_TRANSPARENCY">TRUE</field>
+      <field name="PRESERVE_DRAW_BUF">FALSE</field>
+      <field name="FADE_ANNOTATIONS">TRUE</field>
+    </block>
+  </tab>
+  <tab name="main" type="MainTab" active="true" scrollx="1121.666748046875" scrolly="645.1110992431641" scale="0.9">
+    <block xmlns="https://developers.google.com/blockly/xml" type="whenClicked" id="[.*t03rK$u=!sM[d4%kC" x="-970" y="-590">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+      <field name="X_RAY">FALSE</field>
+      <field name="DOUBLE_CLICK">FALSE</field>
+      <field name="LEFT_BUTTON">TRUE</field>
+      <field name="MIDDLE_BUTTON">TRUE</field>
+      <field name="RIGHT_BUTTON">TRUE</field>
+      <value name="VALUE">
+        <shadow type="objectList" id="}J)7DexaPbTST0uqaL^n">
+          <field name="FIELDNAME">&lt;none&gt;</field>
+        </shadow>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="whenHovered" id="IZV_LTsP@VgZS^kkR[K:" x="-950" y="-430">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false"></mutation>
+      <field name="X_RAY">FALSE</field>
+      <value name="VALUE">
+        <shadow type="objectList" id="$4j*z59g+;ymT9HZP!+S">
+          <field name="FIELDNAME">&lt;none&gt;</field>
+        </shadow>
+        <block type="objectList" id="{V8qMa/1tI/a~$oB=#kO">
+          <field name="FIELDNAME">osnova</field>
+        </block>
+      </value>
+      <statement name="DO_OVER">
+        <block type="outline" id="Muad:3gn[5IhmN1Wfm7p">
+          <field name="DO_WHAT">ENABLE</field>
+          <value name="TARGET">
+            <shadow type="objectList" id="H)g%J#oBn$EMEx5,jPSF">
+              <field name="FIELDNAME">&lt;none&gt;</field>
+            </shadow>
+            <block type="objectList" id=".A$7rrZW^TWmM87[{sM/">
+              <field name="FIELDNAME">osnova</field>
+            </block>
+          </value>
+          <next>
+            <block type="replaceTexture" id="DU]~K=Kt?K=9}*?=an!B">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false"></mutation>
+              <field name="OLD_TEX_NAME">1_0-specular.png</field>
+              <value name="MATERIAL">
+                <shadow type="materialList" id="G@(Ialqwv#@M[~$i-T7c">
+                  <field name="FIELDNAME">&lt;none&gt;</field>
+                </shadow>
+                <block type="materialList" id="h=~@MirLhQQ5,V,LuPB,">
+                  <field name="FIELDNAME">osnova_main</field>
+                </block>
+              </value>
+              <value name="NEW_TEX_URL">
+                <shadow type="text" id="~UQb[]tw]WQIK0`$n;]7">
+                  <field name="TEXT">./cloth/rogozhka/9.jpg</field>
+                </shadow>
+              </value>
+            </block>
+          </next>
+        </block>
+      </statement>
+      <statement name="DO_OUT">
+        <block type="outline" id="fZN01OL:ZS`2G%}wOp-Y">
+          <field name="DO_WHAT">DISABLE</field>
+          <value name="TARGET">
+            <shadow type="objectList">
+              <field name="FIELDNAME">&lt;none&gt;</field>
+            </shadow>
+            <block type="objectList" id="vNNoN.(ac;ZoY}=U6QIx">
+              <field name="FIELDNAME">osnova</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="xy023*lyB%EZB0H,PhOv" x="-990" y="-250">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <shadow type="text" id="7-6J4Y`Y.$-HpHMr:IUp">
+          <field name="TEXT">colt1</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="setHTMLElemStyle" id="QKQ_#P.*qXDaL*v#oV6%">
+          <field name="PROPERTY">backgroundColor</field>
+          <field name="PARENT">TRUE</field>
+          <value name="VALUE">
+            <block type="text" id="dk_{^EljoL4b$Zc$NFI[">
+              <field name="TEXT">colt1</field>
+            </block>
+          </value>
+          <value name="ID">
+            <shadow type="text" id="9_Y}KwuSj_P)@F0}obW5">
+              <field name="TEXT"/>
+            </shadow>
+            <block type="text" id="PvorM1Pjd2/h5jNW(jy;">
+              <field name="TEXT">colt3</field>
+            </block>
+          </value>
+          <next>
+            <block type="console.log" id="L5oZ/5zIm-=uL)$:Tltr">
+              <value name="VALUE">
+                <shadow type="text" id="bUa4Y*7c==cD$@M_LR+a">
+                  <field name="TEXT">Hello, Verge!</field>
+                </shadow>
+              </value>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <editorsettings viewport-x="1422" viewport-y="28" viewport-w="960" viewport-h="591.5" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>
