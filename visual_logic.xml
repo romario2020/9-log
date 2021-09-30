@@ -8,7 +8,7 @@
       <field name="FADE_ANNOTATIONS">TRUE</field>
     </block>
   </tab>
-  <tab name="main" type="MainTab" active="true" scrollx="458.39692891566165" scrolly="2325.597257309855" scale="0.6139132535407589">
+  <tab name="main" type="MainTab" active="true" scrollx="459.9054191475677" scrolly="2330.9848053374517" scale="0.6139132535407589">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="-hxV@8)1^=`Mop;Q:I#D" type="">textura_img</variable>
       <variable id="?rdEqG_!+JjSKO#36H/A" type="">textura_img_ind</variable>
@@ -265,7 +265,7 @@
                           <next>
                             <block type="replaceTexture" id="xf={3:ogRlC}(GN4L:ko">
                               <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false"></mutation>
-                              <field name="OLD_TEX_NAME">1_0-specular.png.001</field>
+                              <field name="OLD_TEX_NAME">osnova.jpg-texture.jpg</field>
                               <value name="MATERIAL">
                                 <shadow type="materialList" id="nRVRO`P|Jcgz{LIwdvQK">
                                   <field name="FIELDNAME">&lt;none&gt;</field>
@@ -369,7 +369,7 @@
                               <next>
                                 <block type="replaceTexture" id="1i))c8n2}0GUOCbnx5:_">
                                   <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false"></mutation>
-                                  <field name="OLD_TEX_NAME">КОР_1-texture_001.jpg</field>
+                                  <field name="OLD_TEX_NAME">podushka_1.png-texture.png</field>
                                   <value name="MATERIAL">
                                     <shadow type="materialList">
                                       <field name="FIELDNAME">&lt;none&gt;</field>
@@ -473,7 +473,7 @@
                                   <next>
                                     <block type="replaceTexture" id="]w]$-zTS5^6@3/!Cy/gE">
                                       <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false"></mutation>
-                                      <field name="OLD_TEX_NAME">1_3.jpg.001</field>
+                                      <field name="OLD_TEX_NAME">karkas.jpg-texture.jpg</field>
                                       <value name="MATERIAL">
                                         <shadow type="materialList">
                                           <field name="FIELDNAME">&lt;none&gt;</field>
@@ -655,7 +655,7 @@
                           <next>
                             <block type="replaceTexture" id="eIEpAK`Yu42y#jR@Z~Mu">
                               <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false"></mutation>
-                              <field name="OLD_TEX_NAME">1_0-specular.png.001</field>
+                              <field name="OLD_TEX_NAME">osnova.jpg-texture.jpg</field>
                               <value name="MATERIAL">
                                 <shadow type="materialList">
                                   <field name="FIELDNAME">&lt;none&gt;</field>
@@ -753,7 +753,7 @@
                               <next>
                                 <block type="replaceTexture" id="QS8LO_eMYxQ]CWmGb}!t">
                                   <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false"></mutation>
-                                  <field name="OLD_TEX_NAME">КОР_1-texture_001.jpg</field>
+                                  <field name="OLD_TEX_NAME">podushka_1.png-texture.png</field>
                                   <value name="MATERIAL">
                                     <shadow type="materialList">
                                       <field name="FIELDNAME">&lt;none&gt;</field>
@@ -851,7 +851,7 @@
                                   <next>
                                     <block type="replaceTexture" id="$MSFDS!]RjS}I%5jU3r}">
                                       <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false"></mutation>
-                                      <field name="OLD_TEX_NAME">1_3.jpg.001</field>
+                                      <field name="OLD_TEX_NAME">karkas.jpg-texture.jpg</field>
                                       <value name="MATERIAL">
                                         <shadow type="materialList">
                                           <field name="FIELDNAME">&lt;none&gt;</field>
@@ -2284,6 +2284,7 @@
       </value>
       <statement name="DO">
         <block type="addAnnotation" id="thHQ],o;Z5v#A%]ieJK4">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" usenameslot="false"></mutation>
           <value name="ANNOTATION">
             <shadow type="text" id="*[7.)qcovwo.UeX^dR4;">
               <field name="TEXT"/>
@@ -2328,6 +2329,7 @@
           </value>
           <next>
             <block type="addAnnotation" id="rc,_,]:`GjmEwh0W0~_+">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" usenameslot="false"></mutation>
               <value name="ANNOTATION">
                 <shadow type="text" id="/9+umiXx^uss0/.jwT8[">
                   <field name="TEXT"/>
@@ -2372,6 +2374,7 @@
               </value>
               <next>
                 <block type="addAnnotation" id="?neM|56;E0e09BP!RUL8">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" usenameslot="false"></mutation>
                   <value name="ANNOTATION">
                     <shadow type="text" id="UjyF]vgH;guY}*v5SgCZ">
                       <field name="TEXT"/>
@@ -2466,6 +2469,9 @@
       <next>
         <block type="whenDraggedOver" id="J|-(C(G9$I8f-#+clR8b">
           <field name="X_RAY">FALSE</field>
+          <field name="LEFT_BUTTON">TRUE</field>
+          <field name="MIDDLE_BUTTON">TRUE</field>
+          <field name="RIGHT_BUTTON">TRUE</field>
           <value name="VALUE">
             <shadow type="objectList" id="s=N,]y)uUIkpP}.]5uA;">
               <field name="FIELDNAME">A</field>
@@ -2601,6 +2607,7 @@
       </value>
       <statement name="DO">
         <block type="addAnnotation" id="wVMMuqUa,Q]jJ{^=%T=^">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" usenameslot="false"></mutation>
           <value name="ANNOTATION">
             <shadow type="text" id="McRdX~lej[d=%ImbkqkS">
               <field name="TEXT">основа</field>
@@ -2635,6 +2642,7 @@
           </value>
           <next>
             <block type="addAnnotation" id="XZ/Ba0gk(8/qeMJ0kkXz">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" usenameslot="false"></mutation>
               <value name="ANNOTATION">
                 <shadow type="text" id="gG;lB18.-q@^N}5--xjQ">
                   <field name="TEXT">карказ</field>
@@ -2669,6 +2677,7 @@
               </value>
               <next>
                 <block type="addAnnotation" id="bC.x,SDvFPCB#oe6=l8+">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" usenameslot="false"></mutation>
                   <value name="ANNOTATION">
                     <shadow type="text" id="}/omtAk99uvEn%+t8yui">
                       <field name="TEXT">подушки</field>
@@ -3059,6 +3068,9 @@
     </block>
     <block xmlns="https://developers.google.com/blockly/xml" type="whenDraggedOver" id="|{:=5JUK,=w(f`9qQf_0" x="770" y="-530">
       <field name="X_RAY">FALSE</field>
+      <field name="LEFT_BUTTON">TRUE</field>
+      <field name="MIDDLE_BUTTON">TRUE</field>
+      <field name="RIGHT_BUTTON">TRUE</field>
       <comment pinned="false" h="80" w="160">перемещаем текстуру по mash</comment>
       <value name="VALUE">
         <shadow type="objectList" id="}{G,i[Yb6=_pYnchku7t">
@@ -3100,6 +3112,9 @@
       <next>
         <block type="whenDraggedOver" id="mq(7LO5qPsKxKOK:IhQK">
           <field name="X_RAY">FALSE</field>
+          <field name="LEFT_BUTTON">TRUE</field>
+          <field name="MIDDLE_BUTTON">TRUE</field>
+          <field name="RIGHT_BUTTON">TRUE</field>
           <value name="VALUE">
             <shadow type="objectList" id="T0labi,sH^-Y@:4bz(BI">
               <field name="FIELDNAME">osnova</field>
@@ -3140,6 +3155,9 @@
           <next>
             <block type="whenDraggedOver" id="B-%)Z7,K+egophKGsFF4">
               <field name="X_RAY">FALSE</field>
+              <field name="LEFT_BUTTON">TRUE</field>
+              <field name="MIDDLE_BUTTON">TRUE</field>
+              <field name="RIGHT_BUTTON">TRUE</field>
               <value name="VALUE">
                 <shadow type="objectList" id="KZs]F;[P|(KSU/4QDd-6">
                   <field name="FIELDNAME">poduski</field>
