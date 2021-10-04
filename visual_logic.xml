@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <tab name="init" type="InitTab" active="false" scrollx="1117.0865659202457" scrolly="501.8485096230478" scale="0.8227024747918816">
+  <tab name="init" type="InitTab" active="false" scrollx="1117.0865659202454" scrolly="501.8485096230478" scale="0.8227024747918816">
     <block xmlns="https://developers.google.com/blockly/xml" type="initSettings" id="gpcA^DEOf2!nKXG-)Tzg" x="-1230" y="-610">
       <field name="LOAD_COMP_ASSETS">FALSE</field>
       <field name="FULLSCREEN">TRUE</field>
@@ -8,7 +8,7 @@
       <field name="FADE_ANNOTATIONS">TRUE</field>
     </block>
   </tab>
-  <tab name="main" type="MainTab" active="true" scrollx="459.9054191475677" scrolly="2330.9848053374517" scale="0.6139132535407589">
+  <tab name="main" type="MainTab" active="false" scrollx="456.31465918765343" scrolly="2120.7275870207613" scale="0.556837418177559">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="-hxV@8)1^=`Mop;Q:I#D" type="">textura_img</variable>
       <variable id="?rdEqG_!+JjSKO#36H/A" type="">textura_img_ind</variable>
@@ -145,6 +145,13 @@
           </value>
         </block>
       </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="console.log" id="KgfPNIg*TXDWga1#%NBb" x="350" y="-3590">
+      <value name="VALUE">
+        <shadow type="text" id="{R]*3V)u]y{``l.O*y1a">
+          <field name="TEXT">ЭТО - 9</field>
+        </shadow>
+      </value>
     </block>
     <block xmlns="https://developers.google.com/blockly/xml" type="whenClicked" id="Wft0QWSoG[~44Morwym7" x="950" y="-3590">
       <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
@@ -965,7 +972,7 @@
       </statement>
     </block>
   </tab>
-  <tab name="price" type="SecondaryTab" active="false" scrollx="357.288381784403" scrolly="215.7058312773637" scale="0.6768393620286868">
+  <tab name="price" type="SecondaryTab" active="false" scrollx="426.67471233461924" scrolly="213.86193374782295" scale="0.45811152199139993">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="D]o^NL]j}=,7#UP=)fTa" type="">model_code</variable>
       <variable id="t#)C!g8H20Xa%hrZ6E.J" type="">raw</variable>
@@ -2021,12 +2028,12 @@
       </statement>
     </block>
   </tab>
-  <tab name="camera" type="SecondaryTab" active="false" scrollx="627.3242645111432" scrolly="673.9410400976944" scale="0.556837418177559">
+  <tab name="camera" type="SecondaryTab" active="true" scrollx="629.7596284543208" scrolly="718.4023339841974" scale="0.556837418177559">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="3xqd-T@s{U?C$3)J8TbT" type="">dimensions_line</variable>
       <variable id=";b2j+tDOFlFM*Fg9u=@N" type="">dict_kat</variable>
     </variables>
-    <block xmlns="https://developers.google.com/blockly/xml" type="createObject" id="tRI{%wdB0gY2-R72dB})" x="950" y="-1170">
+    <block xmlns="https://developers.google.com/blockly/xml" type="createObject" id="tRI{%wdB0gY2-R72dB})" disabled="true" x="950" y="-1170">
       <mutation xmlns="http://www.w3.org/1999/xhtml" object_type="BOX"></mutation>
       <field name="TYPE">BOX</field>
       <field name="CAMERA_TYPE">PERSPECTIVE</field>
@@ -2038,17 +2045,17 @@
       </value>
       <value name="WIDTH">
         <shadow type="math_number" id="O4w3%Ha)E{$Vd#*.%g.w">
-          <field name="NUM">0.1</field>
+          <field name="NUM">1</field>
         </shadow>
       </value>
       <value name="HEIGHT">
         <shadow type="math_number" id="PlEY/2],P9.G)S]rXTzR">
-          <field name="NUM">0.1</field>
+          <field name="NUM">1</field>
         </shadow>
       </value>
       <value name="DEPTH">
         <shadow type="math_number" id="GP[MouC2zI|~9/OWn`/!">
-          <field name="NUM">0.1</field>
+          <field name="NUM">1</field>
         </shadow>
       </value>
       <next>
@@ -2830,7 +2837,7 @@
       </statement>
     </block>
   </tab>
-  <tab name="cloth" type="SecondaryTab" active="false" scrollx="335.95203870223816" scrolly="487.10150611762884" scale="0.6768393620286863">
+  <tab name="cloth" type="SecondaryTab" active="false" scrollx="335.95203870223827" scrolly="487.10150611762884" scale="0.6768393620286863">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="fY8Kt9T/zTy;gkkUM?nQ" type="">active_mash</variable>
       <variable id="_}7__%@Pkw=]i;c0)+}o" type="">cloth_size</variable>
@@ -3420,6 +3427,53 @@
           </next>
         </block>
       </statement>
+    </block>
+  </tab>
+  <tab name="scene" type="SecondaryTab" active="false" scrollx="6.821210263296962e-13" scrolly="5.684341886080802e-14" scale="0.9">
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="vt;6Gtcx2!z%BXEw4OAH" x="210" y="390">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <shadow type="text" id="@)S8Rrc6CyU2h!yfQLMj">
+          <field name="TEXT">q6</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="loadScene" id="LGzd(}WACgEp3R#=if^n">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" enableonprogress="false" enableonerror="false" enablealias="false"></mutation>
+          <value name="URL">
+            <shadow type="text" id="c:o=A,70f}B_io`G@YID">
+              <field name="TEXT">/applications/mm_scene/mm_scene.gltf</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="console.log" id="-yo||a2?w|I7/8|V{@3$">
+              <value name="VALUE">
+                <shadow type="text" id="k2p2vGsjJ7:Ab9oNJBN*">
+                  <field name="TEXT">ура??</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="unloadScene" id="|R}SlU^+gVb7hZ;iVruE" disabled="true">
+                  <value name="URL">
+                    <shadow type="text" id="Br98u2pqp(@++o7Agn97">
+                      <field name="TEXT"/>
+                    </shadow>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="appendScene" id="y;pZ8pOFuDd9dS:EDThy" disabled="true" x="450" y="630">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" enableonprogress="false" enableonerror="false" loadcameras="false" loadlights="false" enablealias="false"></mutation>
+      <value name="URL">
+        <shadow type="text" id="-u}k16w[U~tQ):)e[dXV">
+          <field name="TEXT">/applications/mm_scene/mm_scene.gltf</field>
+        </shadow>
+      </value>
     </block>
   </tab>
   <editorsettings viewport-x="1134" viewport-y="28" viewport-w="768" viewport-h="473.5" viewport-hidden="true" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
